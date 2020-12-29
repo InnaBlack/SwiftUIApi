@@ -1,0 +1,185 @@
+---
+openapi: 3.0.3
+info:
+  title: Shiphol-weather
+  description: Shiphol-weather
+  version: 1.0.0
+servers:
+- url: https://api.schiphol.nl/public-flights/
+- url: https://weather.visualcrossing.com
+tags:
+- name: Destination
+  description: destination
+- name: Weather Forecast
+- name: Historical Weather Data
+paths:
+  /destinations:
+    get:
+      tags:
+      - destinations
+      summary: Get destination
+      operationId: getDestinations
+      parameters:
+      - name: app_id
+        in: header
+        description: an authorization header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          default: 'd51e7d9d'
+      - name: app_key
+        in: header
+        description: an authorization header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          default: '7b2e061cde3bcbaa8831e4fb8bb777d6'
+      - name: ResourceVersion
+        in: header
+        description: an authorization header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          default: 'v4'
+      - name: sort
+        in: query
+        description: sort
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+          enum: [+publicName.dutch, -publicName.dutch]
+      - name: page
+        in: query
+        description: Paging
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: integer
+      responses:
+        "200":
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DestinationList'
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+  /VisualCrossingWebServices/rest/services/weatherdata/forecast:
+    get:
+      description: 'Provides access to weather forecast information. The forecast is available for up to 15 days at the hourly, 12 hour and daily summary level.'
+      parameters:
+        - example: 'false'
+          in: query
+          name: sendAsDatasource
+          schema:
+            type: boolean
+        - example: 'false'
+          in: query
+          name: allowAsynch
+          schema:
+            type: boolean
+        - example: 'false'
+          in: query
+          name: shortColumnNames
+          schema:
+            type: boolean
+        - example: Mijdrecht%2C%20UT%2C%20NL
+          in: query
+          name: locations
+          schema:
+            type: string
+        - example: '24'
+          in: query
+          name: aggregateHours
+          schema:
+            type: string
+        - example: json
+          in: query
+          name: contentType
+          schema:
+            type: string
+        - example: us
+          in: query
+          name: unitGroup
+          schema:
+            type: string
+        - example: A3PX775FQJLZHZFFTRATBDZQ4
+          in: query
+          name: key
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+      servers:
+        - url: 'https://weather.visualcrossing.com'
+      summary: Weather Forecast API
+      tags:
+        - Weather Forecast
+    servers:
+      - url: 'https://weather.visualcrossing.com'
+components:
+  schemas:
+    DestinationList:
+      type: object
+      properties:
+        title:
+          type: string
+        results:
+          type: array
+          items:
+            $ref: '#/components/schemas/Destination'
+    Destination:
+      type: object
+      properties:
+        city:
+          type: string
+        country:
+          type: integer
+        iata:
+          type: string
+        publicName:
+          type: string
+          enum: [dutch, english]
+    WeatherDestination:
+      type: object
+      properties:
+        id:
+          type: string
+        currentConditions:
+            $ref: '#/components/schemas/Weather'
+    Weather:
+      type: object
+      properties:
+        wdir:
+          type: float
+        temp:
+          type: float
+        icon:
+          type: string
+    ErrorModel:
+      required:
+      - code
+      - message
+      type: object
+      properties:
+        message:
+          type: string
+        code:
+          maximum: 600
+          minimum: 100
+          type: integer
+          

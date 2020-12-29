@@ -45,6 +45,7 @@
 		9D3A9055259B6F5800EF8A43 /* SwiftUIApiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIApiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3A9059259B6F5800EF8A43 /* SwiftUIApiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIApiUITests.swift; sourceTree = "<group>"; };
 		9D3A905B259B6F5800EF8A43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D3A908F259B78C300EF8A43 /* Networking */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Networking; path = Modules/Networking; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +96,7 @@
 		9D3A903B259B6F5100EF8A43 /* SwiftUIApi */ = {
 			isa = PBXGroup;
 			children = (
+				9D3A908E259B789A00EF8A43 /* Modules */,
 				9D3A903C259B6F5100EF8A43 /* SwiftUIApiApp.swift */,
 				9D3A903E259B6F5100EF8A43 /* ContentView.swift */,
 				9D3A9040259B6F5700EF8A43 /* Assets.xcassets */,
@@ -128,6 +130,14 @@
 				9D3A905B259B6F5800EF8A43 /* Info.plist */,
 			);
 			path = SwiftUIApiUITests;
+			sourceTree = "<group>";
+		};
+		9D3A908E259B789A00EF8A43 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9D3A908F259B78C300EF8A43 /* Networking */,
+			);
+			name = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
