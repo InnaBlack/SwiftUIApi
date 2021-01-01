@@ -20,6 +20,15 @@ paths:
       summary: Get destination
       operationId: getDestinations
       parameters:
+      - name: Accept
+        in: header
+        description: an authorization header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          default: 'application/json'
       - name: app_id
         in: header
         description: an authorization header
@@ -148,12 +157,16 @@ components:
         city:
           type: string
         country:
-          type: integer
+          type: string
         iata:
           type: string
         publicName:
-          type: string
-          enum: [dutch, english]
+          type: object
+          properties:
+           dutch :
+             type: string
+           english:
+             type: string
     WeatherDestination:
       type: object
       properties:

@@ -61,6 +61,7 @@ open class DestinationsAPI {
             "page": page?.encodeToJSON()
         ])
         let nillableHeaders: [String: Any?] = [
+            "Accept": "application/json".encodeToJSON(),
             "app_id": appId.encodeToJSON(),
             "app_key": appKey.encodeToJSON(),
             "ResourceVersion": resourceVersion.encodeToJSON()

@@ -10,12 +10,26 @@ import UIComponents
 
 struct AirportListScreen: View {
     
-    @Binding var rouwDetailFiltered: Bool
+    @EnvironmentObject var airportViewModel: AirportListViewModel
     
     var body: some View {
-        
         NavControllerView(transition: .custom(.moveAndFade)) {
-            AirportScreenContent()
+            List {
+                ForEach(airportViewModel.items) { airport in
+                    if let publicName = airport.publicName  {
+                        NavPushButton(destination:   AirlineCellView(item: airport)
+                                        .onAppear() {
+                                            if airportViewModel.items.isLast(airport) {
+                                                airportViewModel.loadPage()
+                                            }
+                                        }) {
+                            Text(verbatim:publicName.english.asStringOrEmpty)
+                        }
+                    }
+                } // List
+            }
+        }.onAppear(){
+            airportViewModel.loadPage()
         }
     }
 }

@@ -11,12 +11,10 @@ import Foundation
 public struct DestinationList: Codable { 
 
 
-    public var title: String?
-    public var results: [Destination]?
+    public var destinations: [Destination]?
 
-    public init(title: String?, results: [Destination]?) {
-        self.title = title
-        self.results = results
+    public init(destinations: [Destination]?) {
+        self.destinations = destinations
     }
 
 }

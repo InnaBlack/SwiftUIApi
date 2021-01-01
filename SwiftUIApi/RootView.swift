@@ -10,14 +10,13 @@ import SwiftUI
 struct RootView: View {
     
     @State private var currentTab: Int = TabList.tab1.rawValue
-    @State private var rouwDetailFiltered: Bool = false
     
     var body: some View {
         TabView(selection: $currentTab) {
-            HomeScreen(currentTab: $currentTab, rouwDetailFiltered: $rouwDetailFiltered).tabItem {
+            HomeScreen(currentTab: $currentTab).tabItem {
                 TabItemView(imageName: TabList.tab1.imageName, titleText: TabList.tab1.titleText)
             }.tag(0)
-            AirportListScreen(rouwDetailFiltered: $rouwDetailFiltered).tabItem {
+            AirportListScreen().tabItem {
                 TabItemView(imageName: TabList.tab2.imageName, titleText: TabList.tab2.titleText)
             }.tag(1)
             SettingsScreen().tabItem {

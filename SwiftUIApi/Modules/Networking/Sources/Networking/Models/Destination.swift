@@ -11,16 +11,12 @@ import Foundation
 public struct Destination: Codable { 
 
 
-    public enum PublicName: String, Codable, CaseIterable {
-        case dutch = "dutch"
-        case english = "english"
-    }
     public var city: String?
-    public var country: Int?
+    public var country: String?
     public var iata: String?
-    public var publicName: PublicName?
+    public var publicName: DestinationPublicName?
 
-    public init(city: String?, country: Int?, iata: String?, publicName: PublicName?) {
+    public init(city: String?, country: String?, iata: String?, publicName: DestinationPublicName?) {
         self.city = city
         self.country = country
         self.iata = iata
