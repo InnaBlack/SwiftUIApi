@@ -29,7 +29,7 @@ final class AirportListViewModel: ObservableObject {
         isPageLoading = true
         page += 1
       
-        DestinationsAPI.getDestinations(appId: "d51e7d9d", appKey: "7b2e061cde3bcbaa8831e4fb8bb777d6", resourceVersion: "v4", sort: .publicnameDutchASC, page: page) { response, error in
+        DestinationAPI.getDestinations(accept: "application/json", appId: "d51e7d9d", appKey: "7b2e061cde3bcbaa8831e4fb8bb777d6", resourceVersion: "v4", sort: .publicnameDutchASC, page: page) { response, error in
             if let results = response?.destinations {
                 self.items.append(contentsOf: results)
             }

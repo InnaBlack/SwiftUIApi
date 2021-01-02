@@ -9,14 +9,15 @@ servers:
 - url: https://weather.visualcrossing.com
 tags:
 - name: Destination
-  description: destination
+- name: Airline
+- name: Flight
 - name: Weather Forecast
 - name: Historical Weather Data
 paths:
   /destinations:
     get:
       tags:
-      - destinations
+      - Destination
       summary: Get destination
       operationId: getDestinations
       parameters:
@@ -86,6 +87,152 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorModel'
+  /airlines:
+      get:
+       tags:
+       - Airline
+       summary: Get airlines
+       operationId: geAtairlines
+       parameters:
+       - name: Accept
+         in: header
+         description: an authorization header
+         required: true
+         style: simple
+         explode: false
+         schema:
+           type: string
+           default: 'application/json'
+       - name: app_id
+         in: header
+         description: an authorization header
+         required: true
+         style: simple
+         explode: false
+         schema:
+           type: string
+           default: 'd51e7d9d'
+       - name: app_key
+         in: header
+         description: an authorization header
+         required: true
+         style: simple
+         explode: false
+         schema:
+           type: string
+           default: '7b2e061cde3bcbaa8831e4fb8bb777d6'
+       - name: ResourceVersion
+         in: header
+         description: an authorization header
+         required: true
+         style: simple
+         explode: false
+         schema:
+           type: string
+           default: 'v4'
+       - name: sort
+         in: query
+         description: sort
+         required: true
+         style: form
+         explode: true
+         schema:
+           type: string
+           enum: [+publicName, -publicName]
+       - name: page
+         in: query
+         description: Paging
+         required: false
+         style: form
+         explode: true
+         schema:
+           type: integer
+       responses:
+        "200":
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AirlineList'
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+  /flights:
+    get:
+      tags:
+      - Flight
+      summary: Get flight
+      operationId: getFlights
+      parameters:
+      - name: Accept
+        in: header
+        description: an authorization header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          default: 'application/json'
+      - name: app_id
+        in: header
+        description: an authorization header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          default: 'd51e7d9d'
+      - name: app_key
+        in: header
+        description: an authorization header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          default: '7b2e061cde3bcbaa8831e4fb8bb777d6'
+      - name: ResourceVersion
+        in: header
+        description: an authorization header
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+          default: 'v4'
+      - name: sort
+        in: query
+        description: sort
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+          enum: [-scheduleTime, +scheduleTime]
+      - name: page
+        in: query
+        description: Paging
+        required: false
+        style: form
+        explode: true
+        schema:
+          type: integer
+      responses:
+        "200":
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FlightList'
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
   /VisualCrossingWebServices/rest/services/weatherdata/forecast:
     get:
       description: 'Provides access to weather forecast information. The forecast is available for up to 15 days at the hourly, 12 hour and daily summary level.'
@@ -145,9 +292,7 @@ components:
     DestinationList:
       type: object
       properties:
-        title:
-          type: string
-        results:
+        destinations:
           type: array
           items:
             $ref: '#/components/schemas/Destination'
@@ -167,6 +312,38 @@ components:
              type: string
            english:
              type: string
+    AirlineList:
+      type: object
+      properties:
+        airlines:
+          type: array
+          items:
+            $ref: '#/components/schemas/Airline'
+    Airline:
+      type: object
+      properties:
+        iata:
+         type: string
+        icao:
+         type: string
+        nvls:
+          type: integer
+        publicName:
+          type: string
+    FlightList:
+      type: object
+      properties:
+        flights:
+          type: array
+          items:
+            $ref: '#/components/schemas/Flight'
+    Flight:
+      type: object
+      properties:
+        aircraftRegistration:
+          type: string
+        lastUpdatedAt:
+          type: string
     WeatherDestination:
       type: object
       properties:
@@ -178,9 +355,9 @@ components:
       type: object
       properties:
         wdir:
-          type: float
+          type: integer
         temp:
-          type: float
+          type: integer
         icon:
           type: string
     ErrorModel:
@@ -195,4 +372,3 @@ components:
           maximum: 600
           minimum: 100
           type: integer
-          

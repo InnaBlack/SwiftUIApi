@@ -16,7 +16,7 @@ struct RootView: View {
             HomeScreen(currentTab: $currentTab).tabItem {
                 TabItemView(imageName: TabList.tab1.imageName, titleText: TabList.tab1.titleText)
             }.tag(0)
-            AirportListScreen().tabItem {
+            ListScreen().tabItem {
                 TabItemView(imageName: TabList.tab2.imageName, titleText: TabList.tab2.titleText)
             }.tag(1)
             SettingsScreen().tabItem {
