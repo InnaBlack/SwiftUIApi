@@ -14,11 +14,12 @@ extension Airline: Identifiable {
     }
 }
 
-final class AirlineListViewModel: ObservableObject {
-    
-    @Published private(set) var items: [Airline] = [Airline]()
-    @Published private(set) var page: Int = 0
-    @Published private(set) var isPageLoading: Bool = false
+final class AirlineListViewModel: ListViewModel, ObservableObject {
+
+    @Published var items: [AdapterItem] = [AdapterItem]()
+    @Published var page: Int = 0
+    @Published var isPageLoading: Bool = false
+    public var id = UUID()
     
     init() {}
     
@@ -31,7 +32,9 @@ final class AirlineListViewModel: ObservableObject {
       
         AirlineAPI.geAtairlines(accept: "application/json", appId: "d51e7d9d", appKey: "7b2e061cde3bcbaa8831e4fb8bb777d6", resourceVersion: "v4", sort: .publicnameASC, page: page) { response, error in
             if let results = response?.airlines {
-                self.items.append(contentsOf: results)
+                self.items = results.map { airline ->  AdapterItem in
+                    AdapterItem(airline)
+                }
             }
             self.isPageLoading = false
         }

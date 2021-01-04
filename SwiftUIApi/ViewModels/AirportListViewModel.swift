@@ -14,11 +14,12 @@ extension Destination: Identifiable {
     }
 }
 
-final class AirportListViewModel: ObservableObject {
+final class AirpotListViewModel: ListViewModel, ObservableObject {
     
-    @Published private(set) var items: [Destination] = [Destination]()
-    @Published private(set) var page: Int = 0
-    @Published private(set) var isPageLoading: Bool = false
+    @Published var items: [AdapterItem] = [AdapterItem]()
+    @Published var page: Int = 0
+    @Published var isPageLoading: Bool = false
+    public var id = UUID()
     
     init() {}
     
@@ -31,8 +32,11 @@ final class AirportListViewModel: ObservableObject {
       
         DestinationAPI.getDestinations(accept: "application/json", appId: "d51e7d9d", appKey: "7b2e061cde3bcbaa8831e4fb8bb777d6", resourceVersion: "v4", sort: .publicnameDutchASC, page: page) { response, error in
             if let results = response?.destinations {
-                self.items.append(contentsOf: results)
+                self.items = results.map { destination -> AdapterItem in
+                    AdapterItem(destination)
+                }
             }
+           
             self.isPageLoading = false
         }
     }

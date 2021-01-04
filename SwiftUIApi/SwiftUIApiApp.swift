@@ -12,8 +12,8 @@ struct SwiftUIApiApp: App {
     var body: some Scene {
         WindowGroup {
             RootView()
-                .environmentObject(AirportListViewModel())
                 .environmentObject(FlightListViewModel())
+                .environmentObject(AirpotListViewModel())
                 .environmentObject(AirlineListViewModel())
         }
     }

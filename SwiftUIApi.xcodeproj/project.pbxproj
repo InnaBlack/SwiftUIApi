@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D25BFB625A21D8100E79841 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D25BFB525A21D8100E79841 /* ListView.swift */; };
+		9D25BFBE25A3054F00E79841 /* AdapterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D25BFBD25A3054F00E79841 /* AdapterItem.swift */; };
+		9D25BFDB25A35FDA00E79841 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D25BFDA25A35FDA00E79841 /* ListViewModel.swift */; };
 		9D3A903D259B6F5100EF8A43 /* SwiftUIApiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A903C259B6F5100EF8A43 /* SwiftUIApiApp.swift */; };
 		9D3A9041259B6F5700EF8A43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A9040259B6F5700EF8A43 /* Assets.xcassets */; };
 		9D3A9044259B6F5700EF8A43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A9043259B6F5700EF8A43 /* Preview Assets.xcassets */; };
@@ -56,6 +59,7 @@
 		9D505A1E25A0AEC0009B9015 /* AirlineListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505A1D25A0AEC0009B9015 /* AirlineListViewModel.swift */; };
 		9D505A1F25A0AEC0009B9015 /* AirlineListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505A1D25A0AEC0009B9015 /* AirlineListViewModel.swift */; };
 		9D505A2025A0AEC0009B9015 /* AirlineListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505A1D25A0AEC0009B9015 /* AirlineListViewModel.swift */; };
+		9D505A4B25A0E4B8009B9015 /* ItemTargetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505A4A25A0E4B8009B9015 /* ItemTargetProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +80,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D25BFB525A21D8100E79841 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		9D25BFBD25A3054F00E79841 /* AdapterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterItem.swift; sourceTree = "<group>"; };
+		9D25BFDA25A35FDA00E79841 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		9D3A9039259B6F5100EF8A43 /* SwiftUIApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3A903C259B6F5100EF8A43 /* SwiftUIApiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIApiApp.swift; sourceTree = "<group>"; };
 		9D3A9040259B6F5700EF8A43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +110,7 @@
 		9D5059BE259C8F48009B9015 /* AirportListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportListViewModel.swift; sourceTree = "<group>"; };
 		9D505A1325A0AEA0009B9015 /* FlightListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListViewModel.swift; sourceTree = "<group>"; };
 		9D505A1D25A0AEC0009B9015 /* AirlineListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlineListViewModel.swift; sourceTree = "<group>"; };
+		9D505A4A25A0E4B8009B9015 /* ItemTargetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTargetProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +140,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D25BFCB25A3312900E79841 /* Basis */ = {
+			isa = PBXGroup;
+			children = (
+				9D25BFCC25A3314E00E79841 /* ItemAdapter */,
+				9D25BFB525A21D8100E79841 /* ListView.swift */,
+				9D25BFDA25A35FDA00E79841 /* ListViewModel.swift */,
+			);
+			path = Basis;
+			sourceTree = "<group>";
+		};
+		9D25BFCC25A3314E00E79841 /* ItemAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				9D505A4A25A0E4B8009B9015 /* ItemTargetProtocol.swift */,
+				9D25BFBD25A3054F00E79841 /* AdapterItem.swift */,
+			);
+			path = ItemAdapter;
+			sourceTree = "<group>";
+		};
+		9D25BFD325A331A100E79841 /* ListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9D50599F259C8EAF009B9015 /* ListScreen.swift */,
+				9D5059A0259C8EAF009B9015 /* CellView.swift */,
+			);
+			path = ListScreen;
+			sourceTree = "<group>";
+		};
 		9D3A9030259B6F5100EF8A43 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +194,7 @@
 			children = (
 				9D3A908E259B789A00EF8A43 /* Modules */,
 				9D505979259C79B5009B9015 /* TabView */,
+				9D25BFCB25A3312900E79841 /* Basis */,
 				9D505978259C79A2009B9015 /* Screens */,
 				9D505977259C7981009B9015 /* ViewModels */,
 				9D505964259C7883009B9015 /* Extension */,
@@ -228,8 +265,7 @@
 		9D505978259C79A2009B9015 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				9D50599F259C8EAF009B9015 /* ListScreen.swift */,
-				9D5059A0259C8EAF009B9015 /* CellView.swift */,
+				9D25BFD325A331A100E79841 /* ListScreen */,
 				9D505990259C8E9D009B9015 /* HomeScreen.swift */,
 				9D50598F259C8E9D009B9015 /* SettingsScreen.swift */,
 				9D50599E259C8EAF009B9015 /* WeatherScreen.swift */,
@@ -387,10 +423,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D5059A1259C8EAF009B9015 /* WeatherScreen.swift in Sources */,
+				9D505A4B25A0E4B8009B9015 /* ItemTargetProtocol.swift in Sources */,
 				9D505991259C8E9D009B9015 /* SettingsScreen.swift in Sources */,
 				9D505A1425A0AEA0009B9015 /* FlightListViewModel.swift in Sources */,
 				9D505968259C78A0009B9015 /* Array.swift in Sources */,
 				9D50597F259C8569009B9015 /* TabItemView.swift in Sources */,
+				9D25BFBE25A3054F00E79841 /* AdapterItem.swift in Sources */,
+				9D25BFB625A21D8100E79841 /* ListView.swift in Sources */,
 				9D50596E259C78A0009B9015 /* Optional.swift in Sources */,
 				9D5059BF259C8F48009B9015 /* AirportListViewModel.swift in Sources */,
 				9D50596B259C78A0009B9015 /* Float+String.swift in Sources */,
@@ -400,6 +439,7 @@
 				9D5059A7259C8EAF009B9015 /* CellView.swift in Sources */,
 				9D5059A4259C8EAF009B9015 /* ListScreen.swift in Sources */,
 				9D505A1E25A0AEC0009B9015 /* AirlineListViewModel.swift in Sources */,
+				9D25BFDB25A35FDA00E79841 /* ListViewModel.swift in Sources */,
 				9D50597C259C8569009B9015 /* TabList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

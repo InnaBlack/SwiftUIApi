@@ -14,11 +14,12 @@ extension Flight: Identifiable {
     }
 }
 
-final class FlightListViewModel: ObservableObject {
+final class FlightListViewModel: ListViewModel, ObservableObject {
     
-    @Published private(set) var items: [Flight] = [Flight]()
-    @Published private(set) var page: Int = 0
-    @Published private(set) var isPageLoading: Bool = false
+    @Published var items: [AdapterItem] = [AdapterItem]()
+    @Published var page: Int = 0
+    @Published var isPageLoading: Bool = false
+    public var id = UUID()
     
     init() {}
     
@@ -31,7 +32,9 @@ final class FlightListViewModel: ObservableObject {
       
         FlightAPI.getFlights(accept: "application/json", appId: "d51e7d9d", appKey: "7b2e061cde3bcbaa8831e4fb8bb777d6", resourceVersion: "v4", sort: .scheduletimeDESC, page: page) { response, error in
             if let results = response?.flights {
-                self.items.append(contentsOf: results)
+                self.items = results.map { flight -> AdapterItem in
+                    AdapterItem(flight)
+                }
             }
             self.isPageLoading = false
         }

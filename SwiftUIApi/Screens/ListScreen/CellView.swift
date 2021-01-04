@@ -11,13 +11,11 @@ import UIComponents
 
 struct CellView: View {
     
-    @EnvironmentObject var airportViewModel: AirportListViewModel
+    @EnvironmentObject var airportViewModel: AirpotListViewModel
     @EnvironmentObject var flightViewModel: FlightListViewModel
-    @EnvironmentObject var airlineViewModel: AirportListViewModel
+    @EnvironmentObject var airlineViewModel: AirlineListViewModel
     
-    let item: Destination = Destination()
-    let item1: Flight = Flight()
-    let item2: Airline = Airline()
+    let item: AdapterItem
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -27,7 +25,7 @@ struct CellView: View {
                 NavPushButton(destination: WeatherScreen()) {
                     Divider()
                     if let publicName = item.publicName  {
-                        Text(verbatim: publicName.english.asStringOrEmpty)
+                        Text(verbatim: publicName)
                             .font(.headline)
                             .foregroundColor(.primary)
                         if airportViewModel.isPageLoading && airportViewModel.items.isLast(item) {
