@@ -28,14 +28,6 @@ struct CellView: View {
                         Text(verbatim: publicName)
                             .font(.headline)
                             .foregroundColor(.primary)
-                        if airportViewModel.isPageLoading && airportViewModel.items.isLast(item) {
-                            Divider()
-                            VStack (alignment: .center) {
-                                ProgressView()
-                                    .progressViewStyle(CircularProgressViewStyle())
-                            }
-                            .frame(maxWidth: .infinity)
-                        }
                 }
             }
         } // VStack

@@ -15,21 +15,34 @@ struct ListView <T: ListViewModel>: View {
     var geometry: GeometryProxy
     
     var body: some View {
-        List {
-            Section.init {
-                Text(sectionName).bold()
+        VStack(alignment: .center) {
+            HStack {
+                Text(sectionName).frame(width: geometry.size.width/2).background(Color.gray)
+                Text(String(viewModel.page)).frame(width: geometry.size.width/2).background(Color.gray)
             }
-            ForEach(viewModel.items) { item in
-                if let publicName = item.publicName  {
-                    NavPushButton(destination: CellView(item: item)) {
-                        Text(verbatim:publicName).onAppear() {
-                            if viewModel.items.isLast(item) {
-                                viewModel.loadPage()
+            List {
+                ForEach(viewModel.items) { item in
+                    if let publicName = item.publicName  {
+                        NavPushButton(destination: CellView(item: item)) {
+                            Text(verbatim:publicName).onAppear() {
+                                if viewModel.items.isLast(item) {
+                                    viewModel.loadPage()
+                                }
                             }
                         }
                     }
                 }
-            }
-        }.frame(width: geometry.size.width - 5, height: geometry.size.height - 55, alignment: .center)//List1
+                Section {
+                    if viewModel.isPageLoading {
+                        VStack (alignment: .center) {
+                            ProgressView()
+                                .progressViewStyle(CircularProgressViewStyle())
+                        }
+                        .frame(maxWidth: .infinity)
+                    }
+                }
+            }.frame(width: geometry.size.width - 5, height: geometry.size.height - 55, alignment: .center)//List1
+            
+        }
     }
 }

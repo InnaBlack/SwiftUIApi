@@ -17,7 +17,7 @@ struct ListScreen: View {
     var body: some View {
         NavControllerView(transition: .custom(.moveAndFade)) {
             GeometryReader { geometry in
-                ScrollView(.horizontal, showsIndicators: false) {
+                ScrollView(.horizontal) {
                     HStack(spacing: 20) {
                         ListView(viewModel: airportViewModel, sectionName: "Airport", geometry: geometry)
                         ListView(viewModel: flightViewModel, sectionName: "Flights", geometry: geometry)
