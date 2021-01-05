@@ -21,16 +21,15 @@ struct ListView <T: ListViewModel>: View {
             }
             ForEach(viewModel.items) { item in
                 if let publicName = item.publicName  {
-                    NavPushButton(destination: CellView(item: item)
-                                    .onAppear() {
-                                        if viewModel.items.isLast(item) {
-                                            viewModel.loadPage()
-                                        }
-                                    }) {
-                        Text(verbatim:publicName)
+                    NavPushButton(destination: CellView(item: item)) {
+                        Text(verbatim:publicName).onAppear() {
+                            if viewModel.items.isLast(item) {
+                                viewModel.loadPage()
+                            }
+                        }
                     }
                 }
             }
-        }.frame(width: geometry.size.width - 5, height: geometry.size.height - 50, alignment: .center)//List1
+        }.frame(width: geometry.size.width - 5, height: geometry.size.height - 55, alignment: .center)//List1
     }
 }

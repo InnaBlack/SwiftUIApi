@@ -36,7 +36,6 @@ final class AirpotListViewModel: ListViewModel, ObservableObject {
                     AdapterItem(destination)
                 }
             }
-           
             self.isPageLoading = false
         }
     }
