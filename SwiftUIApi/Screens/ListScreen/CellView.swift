@@ -9,28 +9,29 @@ import SwiftUI
 import Networking
 import UIComponents
 
-struct CellView: View {
-    
-    @EnvironmentObject var airportViewModel: AirpotListViewModel
-    @EnvironmentObject var flightViewModel: FlightListViewModel
-    @EnvironmentObject var airlineViewModel: AirlineListViewModel
+struct CellView<T: ListViewModel>: View {
     
     let item: AdapterItem
-
+    let viewModel: T
+    
     var body: some View {
         VStack(alignment: .leading) {
             NavPopButton(destination: .previous) {
                 Image(systemName: "arrow.left.circle.fill")
             }
-                NavPushButton(destination: WeatherScreen()) {
-                    Divider()
-                    if let publicName = item.publicName  {
-                        Text(verbatim: publicName)
-                            .font(.headline)
-                            .foregroundColor(.primary)
-                }
-            }
-        } // VStack
+            switch viewModel {
+            case is AirpotListViewModel :
+                WeatherScreen().environmentObject(WeatherListViewModel(location: item.publicName.asStringOrEmpty))
+            case is WeatherListViewModel :
+                let ietemWeather = item.item as! Weather
+                WeatherDetailScreen(item: ietemWeather)
+                Spacer()
+            default:
+                Divider()
+                Text(verbatim: item.publicName.asStringOrEmpty)
+                    .font(.headline)
+                    .foregroundColor(.primary)
+            } // VStack
+        }
     }
 }
-

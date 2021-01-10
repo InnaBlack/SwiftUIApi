@@ -10,6 +10,7 @@
 		9D25BFB625A21D8100E79841 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D25BFB525A21D8100E79841 /* ListView.swift */; };
 		9D25BFBE25A3054F00E79841 /* AdapterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D25BFBD25A3054F00E79841 /* AdapterItem.swift */; };
 		9D25BFDB25A35FDA00E79841 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D25BFDA25A35FDA00E79841 /* ListViewModel.swift */; };
+		9D25BFF225A4AF1E00E79841 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D25BFF125A4AF1E00E79841 /* WeatherListViewModel.swift */; };
 		9D3A903D259B6F5100EF8A43 /* SwiftUIApiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A903C259B6F5100EF8A43 /* SwiftUIApiApp.swift */; };
 		9D3A9041259B6F5700EF8A43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A9040259B6F5700EF8A43 /* Assets.xcassets */; };
 		9D3A9044259B6F5700EF8A43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A9043259B6F5700EF8A43 /* Preview Assets.xcassets */; };
@@ -60,6 +61,8 @@
 		9D505A1F25A0AEC0009B9015 /* AirlineListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505A1D25A0AEC0009B9015 /* AirlineListViewModel.swift */; };
 		9D505A2025A0AEC0009B9015 /* AirlineListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505A1D25A0AEC0009B9015 /* AirlineListViewModel.swift */; };
 		9D505A4B25A0E4B8009B9015 /* ItemTargetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505A4A25A0E4B8009B9015 /* ItemTargetProtocol.swift */; };
+		9D76419925A75DA8006E0B3F /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76419825A75DA8006E0B3F /* Date+String.swift */; };
+		9D7641A625A7B02F006E0B3F /* WeatherDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7641A525A7B02F006E0B3F /* WeatherDetailScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +86,7 @@
 		9D25BFB525A21D8100E79841 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		9D25BFBD25A3054F00E79841 /* AdapterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterItem.swift; sourceTree = "<group>"; };
 		9D25BFDA25A35FDA00E79841 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		9D25BFF125A4AF1E00E79841 /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
 		9D3A9039259B6F5100EF8A43 /* SwiftUIApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3A903C259B6F5100EF8A43 /* SwiftUIApiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIApiApp.swift; sourceTree = "<group>"; };
 		9D3A9040259B6F5700EF8A43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 		9D505A1325A0AEA0009B9015 /* FlightListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListViewModel.swift; sourceTree = "<group>"; };
 		9D505A1D25A0AEC0009B9015 /* AirlineListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlineListViewModel.swift; sourceTree = "<group>"; };
 		9D505A4A25A0E4B8009B9015 /* ItemTargetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTargetProtocol.swift; sourceTree = "<group>"; };
+		9D76419825A75DA8006E0B3F /* Date+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
+		9D7641A525A7B02F006E0B3F /* WeatherDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +254,7 @@
 				9D505965259C789F009B9015 /* Array.swift */,
 				9D505966259C78A0009B9015 /* Float+String.swift */,
 				9D505967259C78A0009B9015 /* Optional.swift */,
+				9D76419825A75DA8006E0B3F /* Date+String.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -258,6 +265,7 @@
 				9D5059BE259C8F48009B9015 /* AirportListViewModel.swift */,
 				9D505A1325A0AEA0009B9015 /* FlightListViewModel.swift */,
 				9D505A1D25A0AEC0009B9015 /* AirlineListViewModel.swift */,
+				9D25BFF125A4AF1E00E79841 /* WeatherListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -269,6 +277,7 @@
 				9D505990259C8E9D009B9015 /* HomeScreen.swift */,
 				9D50598F259C8E9D009B9015 /* SettingsScreen.swift */,
 				9D50599E259C8EAF009B9015 /* WeatherScreen.swift */,
+				9D7641A525A7B02F006E0B3F /* WeatherDetailScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -431,10 +440,13 @@
 				9D25BFBE25A3054F00E79841 /* AdapterItem.swift in Sources */,
 				9D25BFB625A21D8100E79841 /* ListView.swift in Sources */,
 				9D50596E259C78A0009B9015 /* Optional.swift in Sources */,
+				9D7641A625A7B02F006E0B3F /* WeatherDetailScreen.swift in Sources */,
+				9D25BFF225A4AF1E00E79841 /* WeatherListViewModel.swift in Sources */,
 				9D5059BF259C8F48009B9015 /* AirportListViewModel.swift in Sources */,
 				9D50596B259C78A0009B9015 /* Float+String.swift in Sources */,
 				9D505994259C8E9D009B9015 /* HomeScreen.swift in Sources */,
 				9D3A903D259B6F5100EF8A43 /* SwiftUIApiApp.swift in Sources */,
+				9D76419925A75DA8006E0B3F /* Date+String.swift in Sources */,
 				9D5059B1259C8EC4009B9015 /* RootView.swift in Sources */,
 				9D5059A7259C8EAF009B9015 /* CellView.swift in Sources */,
 				9D5059A4259C8EAF009B9015 /* ListScreen.swift in Sources */,

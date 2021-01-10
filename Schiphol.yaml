@@ -6,7 +6,7 @@ info:
   version: 1.0.0
 servers:
 - url: https://api.schiphol.nl/public-flights/
-- url: https://weather.visualcrossing.com
+- url: https://weather.visualcrossing.com ## needc to fixed in API for two urls
 tags:
 - name: Destination
 - name: Airline
@@ -347,9 +347,7 @@ components:
     WeatherDestination:
       type: object
       properties:
-        id:
-          type: string
-        currentConditions:
+        locations:
             $ref: '#/components/schemas/Weather'
     Weather:
       type: object

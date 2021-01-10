@@ -16,6 +16,7 @@ extension Flight: Identifiable {
 
 final class FlightListViewModel: ListViewModel, ObservableObject {
     
+   
     @Published var items: [AdapterItem] = [AdapterItem]()
     @Published var page: Int = 0
     @Published var isPageLoading: Bool = false

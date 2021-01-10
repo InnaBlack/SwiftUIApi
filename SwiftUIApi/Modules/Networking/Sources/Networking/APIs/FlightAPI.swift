@@ -54,7 +54,7 @@ open class FlightAPI {
      */
     open class func getFlightsWithRequestBuilder(accept: String, appId: String, appKey: String, resourceVersion: String, sort: Sort_getFlights, page: Int? = nil) -> RequestBuilder<FlightList> {
         let path = "/flights"
-        let URLString = OpenAPIClientAPI.basePath + path
+        let URLString = OpenAPIClientAPI.baseSchipholPath + path
         let parameters: [String:Any]? = nil
         
         var url = URLComponents(string: URLString)

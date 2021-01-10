@@ -9,17 +9,22 @@ import SwiftUI
 import UIComponents
 
 struct WeatherScreen: View {
+    
+    @EnvironmentObject var weatherViewModel: WeatherListViewModel
+    
 
     var body: some View {
         
         VStack {
-            NavPopButton(destination: .previous) {
-                Image(systemName: "arrow.left.circle.fill")
-                    .font(.largeTitle)
+            GeometryReader { geometry in
+                Divider()
+                Spacer()
+                HStack {
+                    ListView(viewModel: weatherViewModel, sectionName: "Weather", geometry: geometry)
+                }
+            }.onAppear() {
+                weatherViewModel.loadPage()
             }
-            Divider()
-            Spacer()
-     
         }
     }
 }

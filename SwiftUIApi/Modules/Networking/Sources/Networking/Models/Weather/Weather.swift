@@ -11,14 +11,13 @@ import Foundation
 public struct Weather: Codable { 
 
 
-    public var wdir: Int?
-    public var temp: Int?
-    public var icon: String?
+    public var wdir: Double?
+    public var temp: Double?
+    public var datetimeStr: String?
 
-    public init(wdir: Int?, temp: Int?, icon: String?) {
+    public init(wdir: Double?, temp: Double?, datetimeStr: String?) {
         self.wdir = wdir
         self.temp = temp
-        self.icon = icon
+        self.datetimeStr = datetimeStr
     }
-
 }

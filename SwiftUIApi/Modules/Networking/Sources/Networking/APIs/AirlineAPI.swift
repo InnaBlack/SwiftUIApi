@@ -54,7 +54,7 @@ open class AirlineAPI {
      */
     open class func geAtairlinesWithRequestBuilder(accept: String, appId: String, appKey: String, resourceVersion: String, sort: Sort_geAtairlines, page: Int? = nil) -> RequestBuilder<AirlineList> {
         let path = "/airlines"
-        let URLString = OpenAPIClientAPI.basePath + path
+        let URLString = OpenAPIClientAPI.baseSchipholPath + path
         let parameters: [String:Any]? = nil
         
         var url = URLComponents(string: URLString)

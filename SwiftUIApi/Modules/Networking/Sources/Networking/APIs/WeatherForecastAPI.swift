@@ -24,11 +24,11 @@ open class WeatherForecastAPI {
      - parameter apiResponseQueue: The queue on which api response is dispatched.
      - parameter completion: completion handler to receive the data and the error objects
      */
-    open class func visualCrossingWebServicesRestServicesWeatherdataForecastGet(sendAsDatasource: Bool? = nil, allowAsynch: Bool? = nil, shortColumnNames: Bool? = nil, locations: String? = nil, aggregateHours: String? = nil, contentType: String? = nil, unitGroup: String? = nil, key: String? = nil, apiResponseQueue: DispatchQueue = OpenAPIClientAPI.apiResponseQueue, completion: @escaping ((_ data: Void?,_ error: Error?) -> Void)) {
-        visualCrossingWebServicesRestServicesWeatherdataForecastGetWithRequestBuilder(sendAsDatasource: sendAsDatasource, allowAsynch: allowAsynch, shortColumnNames: shortColumnNames, locations: locations, aggregateHours: aggregateHours, contentType: contentType, unitGroup: unitGroup, key: key).execute(apiResponseQueue) { result -> Void in
+    open class func visualCrossingWebServicesRestServicesWeatherdataForecastGet(locations: String? = nil, aggregateHours: String? = nil, contentType: String? = nil, unitGroup: String? = nil, key: String? = nil, apiResponseQueue: DispatchQueue = OpenAPIClientAPI.apiResponseQueue, completion: @escaping ((_ data: WeatherDestination?,_ error: Error?) -> Void)) {
+        visualCrossingWebServicesRestServicesWeatherdataForecastGetWithRequestBuilder(locations: locations, aggregateHours: aggregateHours, contentType: contentType, unitGroup: unitGroup, key: key).execute(apiResponseQueue) { result -> Void in
             switch result {
-            case .success:
-                completion((), nil)
+            case let .success(response):
+                completion(response.body, nil)
             case let .failure(error):
                 completion(nil, error)
             }
@@ -49,24 +49,21 @@ open class WeatherForecastAPI {
      - parameter key: (query)  (optional)
      - returns: RequestBuilder<Void> 
      */
-    open class func visualCrossingWebServicesRestServicesWeatherdataForecastGetWithRequestBuilder(sendAsDatasource: Bool? = nil, allowAsynch: Bool? = nil, shortColumnNames: Bool? = nil, locations: String? = nil, aggregateHours: String? = nil, contentType: String? = nil, unitGroup: String? = nil, key: String? = nil) -> RequestBuilder<Void> {
+    open class func visualCrossingWebServicesRestServicesWeatherdataForecastGetWithRequestBuilder(locations: String? = nil, aggregateHours: String? = nil, contentType: String? = nil, unitGroup: String? = nil, key: String? = nil) -> RequestBuilder<WeatherDestination> {
         let path = "/VisualCrossingWebServices/rest/services/weatherdata/forecast"
-        let URLString = OpenAPIClientAPI.basePath + path
+        let URLString = OpenAPIClientAPI.baseWeatherPath + path
         let parameters: [String:Any]? = nil
         
         var url = URLComponents(string: URLString)
         url?.queryItems = APIHelper.mapValuesToQueryItems([
-            "sendAsDatasource": sendAsDatasource?.encodeToJSON(), 
-            "allowAsynch": allowAsynch?.encodeToJSON(), 
-            "shortColumnNames": shortColumnNames?.encodeToJSON(), 
             "locations": locations?.encodeToJSON(), 
             "aggregateHours": aggregateHours?.encodeToJSON(), 
             "contentType": contentType?.encodeToJSON(), 
             "unitGroup": unitGroup?.encodeToJSON(), 
             "key": key?.encodeToJSON()
         ])
-
-        let requestBuilder: RequestBuilder<Void>.Type = OpenAPIClientAPI.requestBuilderFactory.getNonDecodableBuilder()
+        
+        let requestBuilder: RequestBuilder<WeatherDestination>.Type = OpenAPIClientAPI.requestBuilderFactory.getBuilder()
 
         return requestBuilder.init(method: "GET", URLString: (url?.string ?? URLString), parameters: parameters, isBody: false)
     }

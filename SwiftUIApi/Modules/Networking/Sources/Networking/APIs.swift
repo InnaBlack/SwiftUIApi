@@ -7,7 +7,8 @@
 import Foundation
 
 open class OpenAPIClientAPI {
-    public static var basePath = "https://api.schiphol.nl/public-flights"
+    public static var baseSchipholPath = "https://api.schiphol.nl/public-flights"
+    public static var baseWeatherPath = "https://weather.visualcrossing.com"
     public static var credential: URLCredential?
     public static var customHeaders: [String:String] = [:]
     public static var requestBuilderFactory: RequestBuilderFactory = URLSessionRequestBuilderFactory()

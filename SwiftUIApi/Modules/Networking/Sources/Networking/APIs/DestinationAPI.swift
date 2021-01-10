@@ -54,7 +54,7 @@ open class DestinationAPI {
      */
     open class func getDestinationsWithRequestBuilder(accept: String, appId: String, appKey: String, resourceVersion: String, sort: Sort_getDestinations, page: Int? = nil) -> RequestBuilder<DestinationList> {
         let path = "/destinations"
-        let URLString = OpenAPIClientAPI.basePath + path
+        let URLString = OpenAPIClientAPI.baseSchipholPath + path
         let parameters: [String:Any]? = nil
         
         var url = URLComponents(string: URLString)

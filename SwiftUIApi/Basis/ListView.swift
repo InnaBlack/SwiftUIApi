@@ -23,7 +23,7 @@ struct ListView <T: ListViewModel>: View {
             List {
                 ForEach(viewModel.items) { item in
                     if let publicName = item.publicName  {
-                        NavPushButton(destination: CellView(item: item)) {
+                        NavPushButton(destination: CellView(item: item, viewModel: viewModel)) {
                             Text(verbatim:publicName).onAppear() {
                                 if viewModel.items.isLast(item) {
                                     viewModel.loadPage()

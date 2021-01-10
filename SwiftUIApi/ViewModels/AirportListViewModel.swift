@@ -14,11 +14,14 @@ extension Destination: Identifiable {
     }
 }
 
+
 final class AirpotListViewModel: ListViewModel, ObservableObject {
+    
     
     @Published var items: [AdapterItem] = [AdapterItem]()
     @Published var page: Int = 0
     @Published var isPageLoading: Bool = false
+    
     public var id = UUID()
     
     init() {}

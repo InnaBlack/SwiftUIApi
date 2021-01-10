@@ -15,6 +15,7 @@ extension Airline: Identifiable {
 }
 
 final class AirlineListViewModel: ListViewModel, ObservableObject {
+     
 
     @Published var items: [AdapterItem] = [AdapterItem]()
     @Published var page: Int = 0
