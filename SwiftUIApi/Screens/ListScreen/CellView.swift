@@ -9,20 +9,19 @@ import SwiftUI
 import Networking
 import UIComponents
 
-struct CellView<T: ListViewModel>: View {
+struct CellView: View {
     
     let item: AdapterItem
-    let viewModel: T
     
     var body: some View {
         VStack(alignment: .leading) {
             NavPopButton(destination: .previous) {
                 Image(systemName: "arrow.left.circle.fill")
             }
-            switch viewModel {
-            case is AirpotListViewModel :
+            switch item.item {
+            case is Destination :
                 WeatherScreen().environmentObject(WeatherListViewModel(location: item.publicName.asStringOrEmpty))
-            case is WeatherListViewModel :
+            case is Weather :
                 let ietemWeather = item.item as! Weather
                 WeatherDetailScreen(item: ietemWeather)
                 Spacer()
