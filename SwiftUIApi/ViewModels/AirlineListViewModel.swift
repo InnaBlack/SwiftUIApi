@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Networking
+import Core
 
 extension Airline: Identifiable {
     public var id: String {
@@ -31,14 +31,14 @@ final class AirlineListViewModel: ListViewModel, ObservableObject {
         isPageLoading = true
         page += 1
       
-        AirlineAPI.geAtairlines(accept: "application/json", appId: "d51e7d9d", appKey: "7b2e061cde3bcbaa8831e4fb8bb777d6", resourceVersion: "v4", sort: .publicnameASC, page: page) { response, error in
-            if let results = response?.airlines {
-                self.items = results.map { airline ->  AdapterItem in
-                    AdapterItem(airline)
-                }
-            }
-            self.isPageLoading = false
-        }
+//        AirlineAPI.geAtairlines(accept: "application/json", appId: "d51e7d9d", appKey: "7b2e061cde3bcbaa8831e4fb8bb777d6", resourceVersion: "v4", sort: .publicnameASC, page: page) { response, error in
+//            if let results = response?.airlines {
+//                self.items = results.map { airline ->  AdapterItem in
+//                    AdapterItem(airline)
+//                }
+//            }
+//            self.isPageLoading = false
+//        }
     }
 }
 

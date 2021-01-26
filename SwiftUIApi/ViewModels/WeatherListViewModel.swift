@@ -7,7 +7,7 @@
 
 
 import SwiftUI
-import Networking
+import Core
 
 extension Weather: Identifiable {
     public var id: String {
@@ -35,24 +35,32 @@ final class WeatherListViewModel: ListViewModel,  ObservableObject {
         isPageLoading = true
         page += 1
         
-        WeatherForecastAPI.visualCrossingWebServicesRestServicesWeatherdataForecastGet(
-            locations: location,
-            aggregateHours: "24",
-            contentType: "json",
-            unitGroup: "us",
-            key: "A3PX775FQJLZHZFFTRATBDZQ4") { response, error in
-            
-            if let resultLocation = response?.locations {
-                if let weather = resultLocation.values.first?.values {
-                    self.items = weather.map { value ->  AdapterItem in
-                        AdapterItem(value)
-                        
-                    }
-                }
-               
-            }
-            self.isPageLoading = false
-        }
+        
+//        let weatherApi: WeatherNetworkServices = ServiceLocator.shared.getService()
+//        weatherApi
+//      
+//            self.weather.map { value ->  AdapterItem in
+//            AdapterItem(value)
+//        }
+//        
+////        WeatherForecastAPI.visualCrossingWebServicesRestServicesWeatherdataForecastGet(
+//            locations: location,
+//            aggregateHours: "24",
+//            contentType: "json",
+//            unitGroup: "us",
+//            key: "A3PX775FQJLZHZFFTRATBDZQ4") { response, error in
+//
+//            if let resultLocation = response?.locations {
+//                if let weather = resultLocation.values.first?.values {
+//                    self.items = weather.map { value ->  AdapterItem in
+//                        AdapterItem(value)
+//
+//                    }
+//                }
+//
+//            }
+//            self.isPageLoading = false
+//        }
     }
 }
 

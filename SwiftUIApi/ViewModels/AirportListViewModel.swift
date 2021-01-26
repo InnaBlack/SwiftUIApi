@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Networking
+import Core
 
 extension Destination: Identifiable {
     public var id: String {
@@ -32,14 +32,17 @@ final class AirpotListViewModel: ListViewModel, ObservableObject {
         }
         isPageLoading = true
         page += 1
-      
-        DestinationAPI.getDestinations(accept: "application/json", appId: "d51e7d9d", appKey: "7b2e061cde3bcbaa8831e4fb8bb777d6", resourceVersion: "v4", sort: .publicnameDutchASC, page: page) { response, error in
-            if let results = response?.destinations {
-                self.items = results.map { destination -> AdapterItem in
-                    AdapterItem(destination)
-                }
-            }
-            self.isPageLoading = false
+        let locator = ServiceLocator.shared
+        guard let airportApi: AirportsNetworkServices = locator.getService() else {
+            fatalError()
         }
+        airportApi.getAirports { (airport, errorMessage) in
+            guard let _ = errorMessage else { return }
+            if let results = airport?.destinations {
+               self.items = results.map { destination -> AdapterItem in
+                AdapterItem(destination) }
+            }
+        }
+        self.isPageLoading = false
     }
 }

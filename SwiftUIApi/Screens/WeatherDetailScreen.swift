@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-import Networking
 import UIComponents
+import Core
 
 
 struct WeatherDetailScreen: View {

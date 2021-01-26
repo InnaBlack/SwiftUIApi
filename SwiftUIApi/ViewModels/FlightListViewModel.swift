@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Networking
+import Core
 
 extension Flight: Identifiable {
     public var id: String {
@@ -31,14 +31,14 @@ final class FlightListViewModel: ListViewModel, ObservableObject {
         isPageLoading = true
         page += 1
       
-        FlightAPI.getFlights(accept: "application/json", appId: "d51e7d9d", appKey: "7b2e061cde3bcbaa8831e4fb8bb777d6", resourceVersion: "v4", sort: .scheduletimeDESC, page: page) { response, error in
-            if let results = response?.flights {
-                self.items = results.map { flight -> AdapterItem in
-                    AdapterItem(flight)
-                }
-            }
-            self.isPageLoading = false
-        }
+//        FlightAPI.getFlights(accept: "application/json", appId: "d51e7d9d", appKey: "7b2e061cde3bcbaa8831e4fb8bb777d6", resourceVersion: "v4", sort: .scheduletimeDESC, page: page) { response, error in
+//            if let results = response?.flights {
+//                self.items = results.map { flight -> AdapterItem in
+//                    AdapterItem(flight)
+//                }
+//            }
+//            self.isPageLoading = false
+//        }
     }
 }
 

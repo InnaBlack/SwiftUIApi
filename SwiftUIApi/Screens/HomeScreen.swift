@@ -12,7 +12,7 @@ struct HomeScreen: View {
     
     var body: some View {
         HStack(alignment: .center, spacing: 20) {
-            Button("Maastricht") {
+            Button("_") {
                 currentTab = TabList.tab2.rawValue
             }
         }

@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Networking
+import Core
 
 public struct AdapterItem: ItemTargetProtocol  {
     
