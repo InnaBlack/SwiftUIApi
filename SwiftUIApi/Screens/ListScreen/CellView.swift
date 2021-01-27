@@ -7,6 +7,7 @@
 
 import SwiftUI
 import UIComponents
+import Core
 
 struct CellView: View {
     
@@ -17,19 +18,19 @@ struct CellView: View {
             NavPopButton(destination: .previous) {
                 Image(systemName: "arrow.left.circle.fill")
             }
-//            switch item.item {
-//            case is Destination :
-//                WeatherScreen().environmentObject(WeatherListViewModel(location: item.publicName.asStringOrEmpty))
-//            case is Weather :
-//                let ietemWeather = item.item as! Weather
-//                WeatherDetailScreen(item: ietemWeather)
-//                Spacer()
-//            default:
-//                Divider()
-//                Text(verbatim: item.publicName.asStringOrEmpty)
-//                    .font(.headline)
-//                    .foregroundColor(.primary)
-//            } // VStack
+            switch item.item {
+            case is Destination :
+                WeatherScreen().environmentObject(WeatherListViewModel(location: item.publicName.asStringOrEmpty))
+            case is Weather :
+                let ietemWeather = item.item as! Weather
+                WeatherDetailScreen(item: ietemWeather)
+                Spacer()
+            default:
+                Divider()
+                Text(verbatim: item.publicName.asStringOrEmpty)
+                    .font(.headline)
+                    .foregroundColor(.primary)
+            } // VStack
         }
     }
 }

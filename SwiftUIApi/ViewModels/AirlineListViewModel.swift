@@ -30,15 +30,17 @@ final class AirlineListViewModel: ListViewModel, ObservableObject {
         }
         isPageLoading = true
         page += 1
-      
-//        AirlineAPI.geAtairlines(accept: "application/json", appId: "d51e7d9d", appKey: "7b2e061cde3bcbaa8831e4fb8bb777d6", resourceVersion: "v4", sort: .publicnameASC, page: page) { response, error in
-//            if let results = response?.airlines {
-//                self.items = results.map { airline ->  AdapterItem in
-//                    AdapterItem(airline)
-//                }
-//            }
-//            self.isPageLoading = false
-//        }
+        let locator = ServiceLocator.shared
+        guard let airlinesApi: AirlinesNetworkServices = locator.getService() else {
+            fatalError()
+        }
+        airlinesApi.getAirlines(page: page) { (airlines, errorMessage)
+            in
+            if let results = airlines?.airlines {
+               self.items = results.map { destination -> AdapterItem in
+                AdapterItem(destination) }
+            }
+        }
+        self.isPageLoading = false
     }
 }
-

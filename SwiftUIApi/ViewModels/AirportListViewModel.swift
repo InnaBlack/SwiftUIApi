@@ -36,8 +36,8 @@ final class AirpotListViewModel: ListViewModel, ObservableObject {
         guard let airportApi: AirportsNetworkServices = locator.getService() else {
             fatalError()
         }
-        airportApi.getAirports { (airport, errorMessage) in
-            guard let _ = errorMessage else { return }
+        airportApi.getAirports(page: page) { (airport, errorMessage)
+            in
             if let results = airport?.destinations {
                self.items = results.map { destination -> AdapterItem in
                 AdapterItem(destination) }

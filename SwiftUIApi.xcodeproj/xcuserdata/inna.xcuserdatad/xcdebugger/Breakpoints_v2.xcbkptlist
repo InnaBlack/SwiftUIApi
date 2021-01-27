@@ -199,22 +199,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6C7D886F-5531-45DE-AD20-8482E648DA32"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SwiftUIApi/ViewModels/WeatherListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
-            landmarkName = "loadPage()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "9843688A-10D1-4A50-8E86-FABC89CE0D93"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -695,38 +679,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "73CF7021-80B5-4C3F-AE83-031CD7CC5BDC"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SwiftUIApi/ViewModels/WeatherListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "loadPage()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7D487CC3-6184-456E-8976-842924D234AD"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SwiftUIApi/ViewModels/WeatherListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "loadPage()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "B4AB397C-1CDA-4A4E-AB8E-3026C5C0B75B"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -770,22 +722,6 @@
             endingLineNumber = "16"
             landmarkName = "Weather"
             landmarkType = "14">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B327D729-BFDC-4B3E-8408-A7EB0AB79376"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SwiftUIApi/ViewModels/WeatherListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "loadPage()"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -861,8 +797,8 @@
             filePath = "SwiftUIApi/Screens/ListScreen/CellView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -887,7 +823,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "A6D945D7-CA84-4215-9DB9-817A314AEF82"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../AllCarParts/AllCarParts/Modules/Core/Sources/Core/Model/DestinationList.swift"
@@ -897,22 +833,6 @@
             endingLineNumber = "11"
             landmarkName = "DestinationList"
             landmarkType = "14">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "864D59A7-E385-442B-9677-46EC43BFE023"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/Session.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "285"
-            endingLineNumber = "285"
-            landmarkName = "request(_:method:parameters:encoding:headers:interceptor:requestModifier:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -950,56 +870,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3CAFDAE7-C0B8-480E-8718-AE5EC601E873"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../AllCarParts/AllCarParts/Modules/Core/Sources/Core/Networking/ApiManager/APIManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "call(type:params:handler:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E0FC0C99-6A50-418D-BD5D-F262C55DBD87"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/Session.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "292"
-            endingLineNumber = "292"
-            landmarkName = "request(_:method:parameters:encoding:headers:interceptor:requestModifier:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C5704FFA-3420-4C5E-9082-5FFE72F96D22"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/Session.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "358"
-            endingLineNumber = "358"
-            landmarkName = "request(_:interceptor:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "BACE4089-3B1D-4DC9-A211-D97C59206875"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../AllCarParts/AllCarParts/Modules/Core/Sources/Core/Model/DestinationList.swift"
@@ -1015,7 +887,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "44521437-2D61-406E-B018-42B67FAF42DF"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../AllCarParts/AllCarParts/Modules/Core/Sources/Core/Model/Destination.swift"
@@ -1031,7 +903,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E4E46BDC-95D2-4F34-A5B4-B042BF1675C2"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../AllCarParts/AllCarParts/Modules/Core/Sources/Core/Networking/ApiManager/APIManager.swift"
@@ -1041,54 +913,6 @@
             endingLineNumber = "43"
             landmarkName = "call(type:params:handler:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D999BA81-1B8E-47A4-97E0-8CEE0BDD34C2"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/Session.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "998"
-            endingLineNumber = "998"
-            landmarkName = "perform(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D999BA81-1B8E-47A4-97E0-8CEE0BDD34C2 - 242f88927a728bb9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in Alamofire.Session.perform(Alamofire.Request) -&gt; ()"
-                  moduleName = "SwiftUIApi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/inna/Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/Session.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "999"
-                  endingLineNumber = "999"
-                  offsetFromSymbolStart = "176">
-               </Location>
-               <Location
-                  uuid = "D999BA81-1B8E-47A4-97E0-8CEE0BDD34C2 - 242f88927a728bb9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in Alamofire.Session.perform(Alamofire.Request) -&gt; ()"
-                  moduleName = "SwiftUIApi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/inna/Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/Session.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "999"
-                  endingLineNumber = "999"
-                  offsetFromSymbolStart = "250">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1104,182 +928,6 @@
             startingLineNumber = "16"
             endingLineNumber = "16"
             landmarkName = "encode(_:with:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7E2DF050-2C3A-42D4-92DD-9A800D4CC9FB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/Session.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "992"
-            endingLineNumber = "992"
-            landmarkName = "perform(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "73CB4F86-475C-4425-9DE0-BE62FDF11FEA"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/Session.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1000"
-            endingLineNumber = "1000"
-            landmarkName = "perform(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "73CB4F86-475C-4425-9DE0-BE62FDF11FEA - 242f88927a728b58"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in Alamofire.Session.perform(Alamofire.Request) -&gt; ()"
-                  moduleName = "SwiftUIApi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/inna/Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/Session.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1000"
-                  endingLineNumber = "1000"
-                  offsetFromSymbolStart = "304">
-               </Location>
-               <Location
-                  uuid = "73CB4F86-475C-4425-9DE0-BE62FDF11FEA - 242f88927a728b58"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in Alamofire.Session.perform(Alamofire.Request) -&gt; ()"
-                  moduleName = "SwiftUIApi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/inna/Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/Session.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1000"
-                  endingLineNumber = "1000"
-                  offsetFromSymbolStart = "384">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "73B2942B-E066-474A-8303-B5528B6CA597"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/Session.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1001"
-            endingLineNumber = "1001"
-            landmarkName = "perform(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "73B2942B-E066-474A-8303-B5528B6CA597 - 242f88927a728b7b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in Alamofire.Session.perform(Alamofire.Request) -&gt; ()"
-                  moduleName = "SwiftUIApi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/inna/Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/Session.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1001"
-                  endingLineNumber = "1001"
-                  offsetFromSymbolStart = "438">
-               </Location>
-               <Location
-                  uuid = "73B2942B-E066-474A-8303-B5528B6CA597 - 242f88927a728b7b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in Alamofire.Session.perform(Alamofire.Request) -&gt; ()"
-                  moduleName = "SwiftUIApi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/inna/Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/Session.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1001"
-                  endingLineNumber = "1001"
-                  offsetFromSymbolStart = "518">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C693B037-4C41-47D8-A57E-807732929840"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/Session.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1002"
-            endingLineNumber = "1002"
-            landmarkName = "perform(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C693B037-4C41-47D8-A57E-807732929840 - 242f88927a728b1a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in Alamofire.Session.perform(Alamofire.Request) -&gt; ()"
-                  moduleName = "SwiftUIApi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/inna/Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/Session.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1002"
-                  endingLineNumber = "1002"
-                  offsetFromSymbolStart = "572">
-               </Location>
-               <Location
-                  uuid = "C693B037-4C41-47D8-A57E-807732929840 - 242f88927a728b1a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 () -&gt; () in Alamofire.Session.perform(Alamofire.Request) -&gt; ()"
-                  moduleName = "SwiftUIApi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/inna/Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/Session.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1002"
-                  endingLineNumber = "1002"
-                  offsetFromSymbolStart = "652">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4A661360-294B-4824-B921-901591A22490"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/Session.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1003"
-            endingLineNumber = "1003"
-            landmarkName = "perform(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1302,63 +950,63 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4124B655-11CF-4872-92E6-AD3AC02FEB8E"
+            uuid = "0CE68CE6-C716-41DE-86DE-4CF988DC6AD0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift"
+            filePath = "../AllCarParts/AllCarParts/Modules/Core/Sources/Core/NetworkingServices/AirportsNetworkServices.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "720"
-            endingLineNumber = "720"
-            landmarkName = "responseJSON(queue:dataPreprocessor:emptyResponseCodes:emptyRequestMethods:options:completionHandler:)"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getAirports(page:handler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "845B0E20-6979-47C6-B2DB-EAF1EDBD351C"
-            shouldBeEnabled = "Yes"
+            uuid = "A7B0A557-10E8-4C53-AA5E-6C8F93FFB2D8"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift"
+            filePath = "SwiftUIApi/ViewModels/AirportListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "215"
-            endingLineNumber = "215"
-            landmarkName = "response(queue:responseSerializer:completionHandler:)"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "loadPage()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "845B0E20-6979-47C6-B2DB-EAF1EDBD351C - bcf2f3240b25b204"
+                  uuid = "A7B0A557-10E8-4C53-AA5E-6C8F93FFB2D8 - c52df6e4878fb526"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Alamofire.DataRequest.response&lt;A where A: Alamofire.DataResponseSerializerProtocol&gt;(queue: __C.OS_dispatch_queue, responseSerializer: A, completionHandler: (Alamofire.DataResponse&lt;A.SerializedObject, Alamofire.AFError&gt;) -&gt; ()) -&gt; Self"
+                  symbolName = "closure #1 (Swift.Optional&lt;Core.DestinationList&gt;, Swift.Optional&lt;Core.AlertMessage&gt;) -&gt; () in SwiftUIApi.AirpotListViewModel.loadPage() -&gt; ()"
                   moduleName = "SwiftUIApi"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/inna/Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift"
+                  urlString = "file:///Users/inna/Desktop/SwiftUIApi/SwiftUIApi/ViewModels/AirportListViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "215"
-                  endingLineNumber = "215"
-                  offsetFromSymbolStart = "212">
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "298">
                </Location>
                <Location
-                  uuid = "845B0E20-6979-47C6-B2DB-EAF1EDBD351C - e35881b20aa1483a"
+                  uuid = "A7B0A557-10E8-4C53-AA5E-6C8F93FFB2D8 - 59c28583d7c0fc0c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in Alamofire.DataRequest.response&lt;A where A: Alamofire.DataResponseSerializerProtocol&gt;(queue: __C.OS_dispatch_queue, responseSerializer: A, completionHandler: (Alamofire.DataResponse&lt;A.SerializedObject, Alamofire.AFError&gt;) -&gt; ()) -&gt; Self"
+                  symbolName = "closure #1 (Core.Destination) -&gt; SwiftUIApi.AdapterItem in closure #1 (Swift.Optional&lt;Core.DestinationList&gt;, Swift.Optional&lt;Core.AlertMessage&gt;) -&gt; () in SwiftUIApi.AirpotListViewModel.loadPage() -&gt; ()"
                   moduleName = "SwiftUIApi"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/inna/Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift"
+                  urlString = "file:///Users/inna/Desktop/SwiftUIApi/SwiftUIApi/ViewModels/AirportListViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "217"
-                  endingLineNumber = "217"
-                  offsetFromSymbolStart = "766">
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "28">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1366,81 +1014,257 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "32020410-A953-4221-AABB-207619DD30AB"
-            shouldBeEnabled = "Yes"
+            uuid = "C31F5154-FDCE-414C-ABE1-53816ADFA901"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift"
+            filePath = "SwiftUIApi/ViewModels/AirportListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "217"
-            endingLineNumber = "217"
-            landmarkName = "response(queue:responseSerializer:completionHandler:)"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "loadPage()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0E00F2F9-4651-4366-9717-F9A083B026DE"
+            uuid = "77D2E325-F787-416B-8391-9FECDBA61E1C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift"
+            filePath = "../AllCarParts/AllCarParts/Modules/Core/Sources/Core/NetworkingServices/AirlinesNetworkServices.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "724"
-            endingLineNumber = "724"
-            landmarkName = "responseJSON(queue:dataPreprocessor:emptyResponseCodes:emptyRequestMethods:options:completionHandler:)"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "getAirlines(page:handler:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "45A033DD-07A4-41D4-89BC-98DA3A5272F6"
+            uuid = "216C5597-F3CF-4EA8-902B-88FFCE2676BC"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift"
+            filePath = "../AllCarParts/AllCarParts/Modules/Core/Sources/Core/NetworkingServices/WeatherNetworkServices.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "218"
-            endingLineNumber = "218"
-            landmarkName = "response(queue:responseSerializer:completionHandler:)"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "getWeather(page:location:handler:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "45A033DD-07A4-41D4-89BC-98DA3A5272F6 - e35881b20aa1485b"
+                  uuid = "216C5597-F3CF-4EA8-902B-88FFCE2676BC - b24b7b3333460483"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in Alamofire.DataRequest.response&lt;A where A: Alamofire.DataResponseSerializerProtocol&gt;(queue: __C.OS_dispatch_queue, responseSerializer: A, completionHandler: (Alamofire.DataResponse&lt;A.SerializedObject, Alamofire.AFError&gt;) -&gt; ()) -&gt; Self"
+                  symbolName = "Core.WeatherNetworkServices.getWeather(page: Swift.Int, location: Swift.String, handler: (Swift.Optional&lt;Core.WeatherDestination&gt;, Swift.Optional&lt;Core.AlertMessage&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "SwiftUIApi"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/inna/Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift"
+                  urlString = "file:///Users/inna/Desktop/AllCarParts/AllCarParts/Modules/Core/Sources/Core/NetworkingServices/WeatherNetworkServices.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "218"
-                  endingLineNumber = "218"
-                  offsetFromSymbolStart = "1027">
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "64">
                </Location>
                <Location
-                  uuid = "45A033DD-07A4-41D4-89BC-98DA3A5272F6 - 8676a31ee4bb00d5"
+                  uuid = "216C5597-F3CF-4EA8-902B-88FFCE2676BC - 325601865e559953"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () throws -&gt; A.SerializedObject in closure #1 () -&gt; () in Alamofire.DataRequest.response&lt;A where A: Alamofire.DataResponseSerializerProtocol&gt;(queue: __C.OS_dispatch_queue, responseSerializer: A, completionHandler: (Alamofire.DataResponse&lt;A.SerializedObject, Alamofire.AFError&gt;) -&gt; ()) -&gt; Self"
+                  symbolName = "closure #1 (Swift.Optional&lt;Core.WeatherDestination&gt;, Swift.Optional&lt;Core.AlertMessage&gt;) -&gt; () in Core.WeatherNetworkServices.getWeather(page: Swift.Int, location: Swift.String, handler: (Swift.Optional&lt;Core.WeatherDestination&gt;, Swift.Optional&lt;Core.AlertMessage&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "SwiftUIApi"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/inna/Library/Developer/Xcode/DerivedData/SwiftUIApi-exeromzrxhnpdjbclzpooqbzomgg/SourcePackages/checkouts/Alamofire/Source/ResponseSerialization.swift"
+                  urlString = "file:///Users/inna/Desktop/AllCarParts/AllCarParts/Modules/Core/Sources/Core/NetworkingServices/WeatherNetworkServices.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "219"
-                  endingLineNumber = "219"
-                  offsetFromSymbolStart = "154">
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "194">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "76EAD859-B5B7-4AED-AFAB-F617AC4E5E3F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../AllCarParts/AllCarParts/Modules/Core/Sources/Core/NetworkingServices/WeatherNetworkServices.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "getWeather(page:location:handler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1DBD774-A9FD-4E17-9E46-259E4ECA23D4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftUIApi/ViewModels/WeatherListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "loadPage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5DBBE1E0-F83A-4944-AB44-0BD9F2B3D1A6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../AllCarParts/AllCarParts/Modules/Core/Sources/Core/Networking/AlamofireUnits/RequestItems.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "path"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC13FFD8-975A-4D62-B4F0-0F354AC18761"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../AllCarParts/AllCarParts/Modules/Core/Sources/Core/Networking/AlamofireUnits/RequestItems.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "headers"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "364709F3-2023-41FF-89FB-7C1FB7CAA25B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../AllCarParts/AllCarParts/Modules/Core/Sources/Core/Model/WeatherDestination.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "WeatherDestination"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9DC4E017-25B8-4475-9D9A-ABDDD337CB82"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../AllCarParts/AllCarParts/Modules/Core/Sources/Core/Model/WeatherDestination.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "GenericCodingKeys"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56FE9A0E-D7C0-4543-A4DB-B66ECEDA36F5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../AllCarParts/AllCarParts/Modules/Core/Sources/Core/Model/WeatherDestination.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "215341C1-A758-4A40-A9AE-D2A5D0CBDD85"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../AllCarParts/AllCarParts/Modules/Core/Sources/Core/Model/WeatherDestination.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "CodingKeys"
+            landmarkType = "13">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "012AE27B-A444-4CE7-9E98-EBA9AFA68799"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../AllCarParts/AllCarParts/Modules/Core/Sources/Core/Model/WeatherDestination.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "CodingKeys"
+            landmarkType = "13">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4CBA7CA8-462F-4BA4-87D0-C09BA4945361"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../AllCarParts/AllCarParts/Modules/Core/Sources/Core/Model/WeatherDestination.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "init(values:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "764F5D9F-635B-4E08-A61D-3B2380FF6FC0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../AllCarParts/AllCarParts/Modules/Core/Sources/Core/NetworkingServices/AirportsNetworkServices.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "getAirports(page:handler:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
