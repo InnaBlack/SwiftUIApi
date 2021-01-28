@@ -1057,38 +1057,6 @@
             endingLineNumber = "21"
             landmarkName = "getWeather(page:location:handler:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "216C5597-F3CF-4EA8-902B-88FFCE2676BC - b24b7b3333460483"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Core.WeatherNetworkServices.getWeather(page: Swift.Int, location: Swift.String, handler: (Swift.Optional&lt;Core.WeatherDestination&gt;, Swift.Optional&lt;Core.AlertMessage&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SwiftUIApi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/inna/Desktop/AllCarParts/AllCarParts/Modules/Core/Sources/Core/NetworkingServices/WeatherNetworkServices.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "21"
-                  endingLineNumber = "21"
-                  offsetFromSymbolStart = "64">
-               </Location>
-               <Location
-                  uuid = "216C5597-F3CF-4EA8-902B-88FFCE2676BC - 325601865e559953"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Core.WeatherDestination&gt;, Swift.Optional&lt;Core.AlertMessage&gt;) -&gt; () in Core.WeatherNetworkServices.getWeather(page: Swift.Int, location: Swift.String, handler: (Swift.Optional&lt;Core.WeatherDestination&gt;, Swift.Optional&lt;Core.AlertMessage&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "SwiftUIApi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/inna/Desktop/AllCarParts/AllCarParts/Modules/Core/Sources/Core/NetworkingServices/WeatherNetworkServices.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "194">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -1111,7 +1079,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "D1DBD774-A9FD-4E17-9E46-259E4ECA23D4"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftUIApi/ViewModels/WeatherListViewModel.swift"

@@ -116,7 +116,7 @@
 		9D505A4A25A0E4B8009B9015 /* ItemTargetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTargetProtocol.swift; sourceTree = "<group>"; };
 		9D76419825A75DA8006E0B3F /* Date+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
 		9D7641A525A7B02F006E0B3F /* WeatherDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailScreen.swift; sourceTree = "<group>"; };
-		9DFBEEC025BD7374006E4E35 /* Core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Core; path = ../../AllCarParts/AllCarParts/Modules/Core; sourceTree = "<group>"; };
+		9DE153B825C1FCA100BFBC74 /* Core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Core; path = Modules/Core; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,7 +242,7 @@
 		9D3A908E259B789A00EF8A43 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				9DFBEEC025BD7374006E4E35 /* Core */,
+				9DE153B825C1FCA100BFBC74 /* Core */,
 				9D50598B259C86F9009B9015 /* UIComponents */,
 			);
 			name = Modules;
