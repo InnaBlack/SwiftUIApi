@@ -1,0 +1,3 @@
+[submodule "SwiftUIApi/Modules/Core"]
+	path = SwiftUIApi/Modules/Core
+	url = git@github.com:InnaBlack/Core.git
