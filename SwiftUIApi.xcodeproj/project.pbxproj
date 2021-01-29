@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D13D77125C49F7300DFCE5D /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 9D13D77025C49F7300DFCE5D /* UIComponents */; };
+		9D13D77725C49F8000DFCE5D /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 9D13D77625C49F8000DFCE5D /* Core */; };
 		9D25BFB625A21D8100E79841 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D25BFB525A21D8100E79841 /* ListView.swift */; };
 		9D25BFBE25A3054F00E79841 /* AdapterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D25BFBD25A3054F00E79841 /* AdapterItem.swift */; };
 		9D25BFDB25A35FDA00E79841 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D25BFDA25A35FDA00E79841 /* ListViewModel.swift */; };
@@ -122,6 +124,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D13D77125C49F7300DFCE5D /* UIComponents in Frameworks */,
+				9D13D77725C49F8000DFCE5D /* Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +315,8 @@
 			);
 			name = SwiftUIApi;
 			packageProductDependencies = (
+				9D13D77025C49F7300DFCE5D /* UIComponents */,
+				9D13D77625C49F8000DFCE5D /* Core */,
 			);
 			productName = SwiftUIApi;
 			productReference = 9D3A9039259B6F5100EF8A43 /* SwiftUIApi.app */;
@@ -384,6 +390,8 @@
 			);
 			mainGroup = 9D3A9030259B6F5100EF8A43;
 			packageReferences = (
+				9D13D76F25C49F7300DFCE5D /* XCRemoteSwiftPackageReference "UIComponents" */,
+				9D13D77525C49F8000DFCE5D /* XCRemoteSwiftPackageReference "Core" */,
 			);
 			productRefGroup = 9D3A903A259B6F5100EF8A43 /* Products */;
 			projectDirPath = "";
@@ -796,6 +804,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9D13D76F25C49F7300DFCE5D /* XCRemoteSwiftPackageReference "UIComponents" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/InnaBlack/UIComponents.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		9D13D77525C49F8000DFCE5D /* XCRemoteSwiftPackageReference "Core" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/InnaBlack/Core.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9D13D77025C49F7300DFCE5D /* UIComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D13D76F25C49F7300DFCE5D /* XCRemoteSwiftPackageReference "UIComponents" */;
+			productName = UIComponents;
+		};
+		9D13D77625C49F8000DFCE5D /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D13D77525C49F8000DFCE5D /* XCRemoteSwiftPackageReference "Core" */;
+			productName = Core;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9D3A9031259B6F5100EF8A43 /* Project object */;
 }
