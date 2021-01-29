@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -52,7 +52,6 @@
 		9D5059BF259C8F48009B9015 /* AirportListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5059BE259C8F48009B9015 /* AirportListViewModel.swift */; };
 		9D5059C0259C8F48009B9015 /* AirportListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5059BE259C8F48009B9015 /* AirportListViewModel.swift */; };
 		9D5059C1259C8F48009B9015 /* AirportListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5059BE259C8F48009B9015 /* AirportListViewModel.swift */; };
-		9D5059CC259C8FBB009B9015 /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 9D5059CB259C8FBB009B9015 /* UIComponents */; };
 		9D505A1425A0AEA0009B9015 /* FlightListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505A1325A0AEA0009B9015 /* FlightListViewModel.swift */; };
 		9D505A1525A0AEA0009B9015 /* FlightListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505A1325A0AEA0009B9015 /* FlightListViewModel.swift */; };
 		9D505A1625A0AEA0009B9015 /* FlightListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505A1325A0AEA0009B9015 /* FlightListViewModel.swift */; };
@@ -62,7 +61,6 @@
 		9D505A4B25A0E4B8009B9015 /* ItemTargetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505A4A25A0E4B8009B9015 /* ItemTargetProtocol.swift */; };
 		9D76419925A75DA8006E0B3F /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76419825A75DA8006E0B3F /* Date+String.swift */; };
 		9D7641A625A7B02F006E0B3F /* WeatherDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7641A525A7B02F006E0B3F /* WeatherDetailScreen.swift */; };
-		9DFBEEE925BD75FE006E4E35 /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 9DFBEEE825BD75FE006E4E35 /* Core */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,7 +101,6 @@
 		9D505967259C78A0009B9015 /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		9D50597A259C8568009B9015 /* TabList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabList.swift; sourceTree = "<group>"; };
 		9D50597B259C8569009B9015 /* TabItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
-		9D50598B259C86F9009B9015 /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = folder; name = UIComponents; path = Modules/UIComponents; sourceTree = "<group>"; };
 		9D50598F259C8E9D009B9015 /* SettingsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		9D505990259C8E9D009B9015 /* HomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		9D50599E259C8EAF009B9015 /* WeatherScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherScreen.swift; sourceTree = "<group>"; };
@@ -116,7 +113,8 @@
 		9D505A4A25A0E4B8009B9015 /* ItemTargetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTargetProtocol.swift; sourceTree = "<group>"; };
 		9D76419825A75DA8006E0B3F /* Date+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
 		9D7641A525A7B02F006E0B3F /* WeatherDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailScreen.swift; sourceTree = "<group>"; };
-		9DE153B825C1FCA100BFBC74 /* Core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Core; path = Modules/Core; sourceTree = "<group>"; };
+		9DD8773925C49C67003F80C1 /* Core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Core; path = Modules/Core; sourceTree = "<group>"; };
+		9DD8773D25C49C8D003F80C1 /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = folder; name = UIComponents; path = Modules/UIComponents; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +122,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D5059CC259C8FBB009B9015 /* UIComponents in Frameworks */,
-				9DFBEEE925BD75FE006E4E35 /* Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,8 +238,8 @@
 		9D3A908E259B789A00EF8A43 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				9DE153B825C1FCA100BFBC74 /* Core */,
-				9D50598B259C86F9009B9015 /* UIComponents */,
+				9DD8773D25C49C8D003F80C1 /* UIComponents */,
+				9DD8773925C49C67003F80C1 /* Core */,
 			);
 			name = Modules;
 			sourceTree = "<group>";
@@ -315,8 +311,6 @@
 			);
 			name = SwiftUIApi;
 			packageProductDependencies = (
-				9D5059CB259C8FBB009B9015 /* UIComponents */,
-				9DFBEEE825BD75FE006E4E35 /* Core */,
 			);
 			productName = SwiftUIApi;
 			productReference = 9D3A9039259B6F5100EF8A43 /* SwiftUIApi.app */;
@@ -802,17 +796,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		9D5059CB259C8FBB009B9015 /* UIComponents */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = UIComponents;
-		};
-		9DFBEEE825BD75FE006E4E35 /* Core */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Core;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9D3A9031259B6F5100EF8A43 /* Project object */;
 }
