@@ -7,14 +7,15 @@
 
 import Foundation
 import RealmSwift
+import Realm
 
 
-protocol AirlinesServiceInput {
+public protocol AirlinesServiceInput {
     func readContacts(with filter: String?) -> Results<Airline>
     
     func readContact(with identifier: String) -> Airline?
     
-    func writeContacts(from data: Data)
+    func writeContacts(from data: AirlineList)
 }
 
 
@@ -36,12 +37,12 @@ extension AirlinesService: AirlinesServiceInput {
         {
             return readRealm.objects(Airline.self)
                 .filter("name CONTAINS[c] %@ OR phoneNumber CONTAINS[c] %@", filterString, filterString)
-                .sorted(byKeyPath: Airline.CodingKeys.name.rawValue, ascending: true)
+                .sorted(byKeyPath: Airline.CodingKeys.nvls.rawValue, ascending: true)
         }
         else
         {
             return readRealm.objects(Airline.self)
-                .sorted(byKeyPath: Airline.CodingKeys.name.rawValue, ascending: true)
+                .sorted(byKeyPath: Airline.CodingKeys.nvls.rawValue, ascending: true)
         }
     }
     
@@ -49,7 +50,7 @@ extension AirlinesService: AirlinesServiceInput {
         return readRealm.object(ofType: Airline.self, forPrimaryKey: identifier)
     }
     
-    func writeContacts(from data: Data){
+    func writeContacts(from data: AirlineList){
         DispatchQueue.global().async {
             autoreleasepool{
                 [weak self] in
@@ -61,17 +62,7 @@ extension AirlinesService: AirlinesServiceInput {
                 {
                     try writeRealm.write
                     {
-                        do
-                        {
-                            let decoder = JSONDecoder()
-                            decoder.dateDecodingStrategy = .iso8601
-                            let contacts = try decoder.decode([Airline].self, from: data)
-                            writeRealm.add(contacts, update: .all)
-                        }
-                        catch
-                        {
-                            print(error)
-                        }
+                        writeRealm.add(data, update: .all)
                     }
                 }
                 catch

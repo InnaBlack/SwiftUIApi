@@ -28,7 +28,7 @@ private extension DataBaseService {
     func makeAirlineConfiguration(readOnly: Bool) -> Realm.Configuration {
         let config = Realm.Configuration(
             fileURL: contactsFileUrl(),
-            schemaVersion: 1)
+            schemaVersion: 4)
         return config
     }
     

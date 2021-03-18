@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D13D77125C49F7300DFCE5D /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 9D13D77025C49F7300DFCE5D /* UIComponents */; };
-		9D13D77725C49F8000DFCE5D /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 9D13D77625C49F8000DFCE5D /* Core */; };
+		9D12ED512601157700DBDC20 /* CoreRealm in Frameworks */ = {isa = PBXBuildFile; productRef = 9D12ED502601157700DBDC20 /* CoreRealm */; };
+		9D12ED6C260145F600DBDC20 /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 9D12ED6B260145F600DBDC20 /* UIComponents */; };
+		9D12ED722601471D00DBDC20 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 9D12ED712601471D00DBDC20 /* Realm */; };
+		9D12ED742601471D00DBDC20 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9D12ED732601471D00DBDC20 /* RealmSwift */; };
 		9D25BFB625A21D8100E79841 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D25BFB525A21D8100E79841 /* ListView.swift */; };
 		9D25BFBE25A3054F00E79841 /* AdapterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D25BFBD25A3054F00E79841 /* AdapterItem.swift */; };
 		9D25BFDB25A35FDA00E79841 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D25BFDA25A35FDA00E79841 /* ListViewModel.swift */; };
-		9D25BFF225A4AF1E00E79841 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D25BFF125A4AF1E00E79841 /* WeatherListViewModel.swift */; };
 		9D3A903D259B6F5100EF8A43 /* SwiftUIApiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3A903C259B6F5100EF8A43 /* SwiftUIApiApp.swift */; };
 		9D3A9041259B6F5700EF8A43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A9040259B6F5700EF8A43 /* Assets.xcassets */; };
 		9D3A9044259B6F5700EF8A43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3A9043259B6F5700EF8A43 /* Preview Assets.xcassets */; };
@@ -39,9 +40,6 @@
 		9D505994259C8E9D009B9015 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505990259C8E9D009B9015 /* HomeScreen.swift */; };
 		9D505995259C8E9D009B9015 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505990259C8E9D009B9015 /* HomeScreen.swift */; };
 		9D505996259C8E9D009B9015 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505990259C8E9D009B9015 /* HomeScreen.swift */; };
-		9D5059A1259C8EAF009B9015 /* WeatherScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50599E259C8EAF009B9015 /* WeatherScreen.swift */; };
-		9D5059A2259C8EAF009B9015 /* WeatherScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50599E259C8EAF009B9015 /* WeatherScreen.swift */; };
-		9D5059A3259C8EAF009B9015 /* WeatherScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50599E259C8EAF009B9015 /* WeatherScreen.swift */; };
 		9D5059A4259C8EAF009B9015 /* ListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50599F259C8EAF009B9015 /* ListScreen.swift */; };
 		9D5059A5259C8EAF009B9015 /* ListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50599F259C8EAF009B9015 /* ListScreen.swift */; };
 		9D5059A6259C8EAF009B9015 /* ListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50599F259C8EAF009B9015 /* ListScreen.swift */; };
@@ -51,18 +49,11 @@
 		9D5059B1259C8EC4009B9015 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5059B0259C8EC4009B9015 /* RootView.swift */; };
 		9D5059B2259C8EC4009B9015 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5059B0259C8EC4009B9015 /* RootView.swift */; };
 		9D5059B3259C8EC4009B9015 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5059B0259C8EC4009B9015 /* RootView.swift */; };
-		9D5059BF259C8F48009B9015 /* AirportListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5059BE259C8F48009B9015 /* AirportListViewModel.swift */; };
-		9D5059C0259C8F48009B9015 /* AirportListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5059BE259C8F48009B9015 /* AirportListViewModel.swift */; };
-		9D5059C1259C8F48009B9015 /* AirportListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5059BE259C8F48009B9015 /* AirportListViewModel.swift */; };
-		9D505A1425A0AEA0009B9015 /* FlightListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505A1325A0AEA0009B9015 /* FlightListViewModel.swift */; };
-		9D505A1525A0AEA0009B9015 /* FlightListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505A1325A0AEA0009B9015 /* FlightListViewModel.swift */; };
-		9D505A1625A0AEA0009B9015 /* FlightListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505A1325A0AEA0009B9015 /* FlightListViewModel.swift */; };
 		9D505A1E25A0AEC0009B9015 /* AirlineListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505A1D25A0AEC0009B9015 /* AirlineListViewModel.swift */; };
 		9D505A1F25A0AEC0009B9015 /* AirlineListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505A1D25A0AEC0009B9015 /* AirlineListViewModel.swift */; };
 		9D505A2025A0AEC0009B9015 /* AirlineListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505A1D25A0AEC0009B9015 /* AirlineListViewModel.swift */; };
 		9D505A4B25A0E4B8009B9015 /* ItemTargetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D505A4A25A0E4B8009B9015 /* ItemTargetProtocol.swift */; };
 		9D76419925A75DA8006E0B3F /* Date+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D76419825A75DA8006E0B3F /* Date+String.swift */; };
-		9D7641A625A7B02F006E0B3F /* WeatherDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7641A525A7B02F006E0B3F /* WeatherDetailScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +77,6 @@
 		9D25BFB525A21D8100E79841 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		9D25BFBD25A3054F00E79841 /* AdapterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterItem.swift; sourceTree = "<group>"; };
 		9D25BFDA25A35FDA00E79841 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
-		9D25BFF125A4AF1E00E79841 /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
 		9D3A9039259B6F5100EF8A43 /* SwiftUIApi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIApi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3A903C259B6F5100EF8A43 /* SwiftUIApiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIApiApp.swift; sourceTree = "<group>"; };
 		9D3A9040259B6F5700EF8A43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,18 +95,13 @@
 		9D50597B259C8569009B9015 /* TabItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItemView.swift; sourceTree = "<group>"; };
 		9D50598F259C8E9D009B9015 /* SettingsScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		9D505990259C8E9D009B9015 /* HomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
-		9D50599E259C8EAF009B9015 /* WeatherScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherScreen.swift; sourceTree = "<group>"; };
 		9D50599F259C8EAF009B9015 /* ListScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListScreen.swift; sourceTree = "<group>"; };
 		9D5059A0259C8EAF009B9015 /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		9D5059B0259C8EC4009B9015 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		9D5059BE259C8F48009B9015 /* AirportListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportListViewModel.swift; sourceTree = "<group>"; };
-		9D505A1325A0AEA0009B9015 /* FlightListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListViewModel.swift; sourceTree = "<group>"; };
 		9D505A1D25A0AEC0009B9015 /* AirlineListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlineListViewModel.swift; sourceTree = "<group>"; };
 		9D505A4A25A0E4B8009B9015 /* ItemTargetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTargetProtocol.swift; sourceTree = "<group>"; };
+		9D6D4D1B25FFEF2900DCF3C2 /* CoreRealm */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CoreRealm; sourceTree = "<group>"; };
 		9D76419825A75DA8006E0B3F /* Date+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+String.swift"; sourceTree = "<group>"; };
-		9D7641A525A7B02F006E0B3F /* WeatherDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailScreen.swift; sourceTree = "<group>"; };
-		9DD8773925C49C67003F80C1 /* Core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Core; path = Modules/Core; sourceTree = "<group>"; };
-		9DD8773D25C49C8D003F80C1 /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = folder; name = UIComponents; path = Modules/UIComponents; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +109,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D13D77125C49F7300DFCE5D /* UIComponents in Frameworks */,
-				9D13D77725C49F8000DFCE5D /* Core in Frameworks */,
+				9D12ED742601471D00DBDC20 /* RealmSwift in Frameworks */,
+				9D12ED722601471D00DBDC20 /* Realm in Frameworks */,
+				9D12ED6C260145F600DBDC20 /* UIComponents in Frameworks */,
+				9D12ED512601157700DBDC20 /* CoreRealm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +185,7 @@
 		9D3A903B259B6F5100EF8A43 /* SwiftUIApi */ = {
 			isa = PBXGroup;
 			children = (
-				9D3A908E259B789A00EF8A43 /* Modules */,
+				9D6D4D1B25FFEF2900DCF3C2 /* CoreRealm */,
 				9D505979259C79B5009B9015 /* TabView */,
 				9D25BFCB25A3312900E79841 /* Basis */,
 				9D505978259C79A2009B9015 /* Screens */,
@@ -239,15 +226,6 @@
 			path = SwiftUIApiUITests;
 			sourceTree = "<group>";
 		};
-		9D3A908E259B789A00EF8A43 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				9DD8773D25C49C8D003F80C1 /* UIComponents */,
-				9DD8773925C49C67003F80C1 /* Core */,
-			);
-			name = Modules;
-			sourceTree = "<group>";
-		};
 		9D505964259C7883009B9015 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,10 +240,7 @@
 		9D505977259C7981009B9015 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				9D5059BE259C8F48009B9015 /* AirportListViewModel.swift */,
-				9D505A1325A0AEA0009B9015 /* FlightListViewModel.swift */,
 				9D505A1D25A0AEC0009B9015 /* AirlineListViewModel.swift */,
-				9D25BFF125A4AF1E00E79841 /* WeatherListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -276,8 +251,6 @@
 				9D25BFD325A331A100E79841 /* ListScreen */,
 				9D505990259C8E9D009B9015 /* HomeScreen.swift */,
 				9D50598F259C8E9D009B9015 /* SettingsScreen.swift */,
-				9D50599E259C8EAF009B9015 /* WeatherScreen.swift */,
-				9D7641A525A7B02F006E0B3F /* WeatherDetailScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -315,8 +288,10 @@
 			);
 			name = SwiftUIApi;
 			packageProductDependencies = (
-				9D13D77025C49F7300DFCE5D /* UIComponents */,
-				9D13D77625C49F8000DFCE5D /* Core */,
+				9D12ED502601157700DBDC20 /* CoreRealm */,
+				9D12ED6B260145F600DBDC20 /* UIComponents */,
+				9D12ED712601471D00DBDC20 /* Realm */,
+				9D12ED732601471D00DBDC20 /* RealmSwift */,
 			);
 			productName = SwiftUIApi;
 			productReference = 9D3A9039259B6F5100EF8A43 /* SwiftUIApi.app */;
@@ -390,8 +365,8 @@
 			);
 			mainGroup = 9D3A9030259B6F5100EF8A43;
 			packageReferences = (
-				9D13D76F25C49F7300DFCE5D /* XCRemoteSwiftPackageReference "UIComponents" */,
-				9D13D77525C49F8000DFCE5D /* XCRemoteSwiftPackageReference "Core" */,
+				9D12ED6A260145F600DBDC20 /* XCRemoteSwiftPackageReference "UIComponents" */,
+				9D12ED702601471C00DBDC20 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = 9D3A903A259B6F5100EF8A43 /* Products */;
 			projectDirPath = "";
@@ -435,18 +410,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D5059A1259C8EAF009B9015 /* WeatherScreen.swift in Sources */,
 				9D505A4B25A0E4B8009B9015 /* ItemTargetProtocol.swift in Sources */,
 				9D505991259C8E9D009B9015 /* SettingsScreen.swift in Sources */,
-				9D505A1425A0AEA0009B9015 /* FlightListViewModel.swift in Sources */,
 				9D505968259C78A0009B9015 /* Array.swift in Sources */,
 				9D50597F259C8569009B9015 /* TabItemView.swift in Sources */,
 				9D25BFBE25A3054F00E79841 /* AdapterItem.swift in Sources */,
 				9D25BFB625A21D8100E79841 /* ListView.swift in Sources */,
 				9D50596E259C78A0009B9015 /* Optional.swift in Sources */,
-				9D7641A625A7B02F006E0B3F /* WeatherDetailScreen.swift in Sources */,
-				9D25BFF225A4AF1E00E79841 /* WeatherListViewModel.swift in Sources */,
-				9D5059BF259C8F48009B9015 /* AirportListViewModel.swift in Sources */,
 				9D50596B259C78A0009B9015 /* Float+String.swift in Sources */,
 				9D505994259C8E9D009B9015 /* HomeScreen.swift in Sources */,
 				9D3A903D259B6F5100EF8A43 /* SwiftUIApiApp.swift in Sources */,
@@ -466,16 +436,13 @@
 			files = (
 				9D3A904F259B6F5800EF8A43 /* SwiftUIApiTests.swift in Sources */,
 				9D505992259C8E9D009B9015 /* SettingsScreen.swift in Sources */,
-				9D505A1525A0AEA0009B9015 /* FlightListViewModel.swift in Sources */,
 				9D50596C259C78A0009B9015 /* Float+String.swift in Sources */,
 				9D505969259C78A0009B9015 /* Array.swift in Sources */,
 				9D505995259C8E9D009B9015 /* HomeScreen.swift in Sources */,
-				9D5059C0259C8F48009B9015 /* AirportListViewModel.swift in Sources */,
 				9D5059A8259C8EAF009B9015 /* CellView.swift in Sources */,
 				9D5059A5259C8EAF009B9015 /* ListScreen.swift in Sources */,
 				9D505980259C8569009B9015 /* TabItemView.swift in Sources */,
 				9D5059B2259C8EC4009B9015 /* RootView.swift in Sources */,
-				9D5059A2259C8EAF009B9015 /* WeatherScreen.swift in Sources */,
 				9D50596F259C78A0009B9015 /* Optional.swift in Sources */,
 				9D505A1F25A0AEC0009B9015 /* AirlineListViewModel.swift in Sources */,
 				9D50597D259C8569009B9015 /* TabList.swift in Sources */,
@@ -488,16 +455,13 @@
 			files = (
 				9D3A905A259B6F5800EF8A43 /* SwiftUIApiUITests.swift in Sources */,
 				9D505993259C8E9D009B9015 /* SettingsScreen.swift in Sources */,
-				9D505A1625A0AEA0009B9015 /* FlightListViewModel.swift in Sources */,
 				9D50596D259C78A0009B9015 /* Float+String.swift in Sources */,
 				9D50596A259C78A0009B9015 /* Array.swift in Sources */,
 				9D505996259C8E9D009B9015 /* HomeScreen.swift in Sources */,
-				9D5059C1259C8F48009B9015 /* AirportListViewModel.swift in Sources */,
 				9D5059A9259C8EAF009B9015 /* CellView.swift in Sources */,
 				9D5059A6259C8EAF009B9015 /* ListScreen.swift in Sources */,
 				9D505981259C8569009B9015 /* TabItemView.swift in Sources */,
 				9D5059B3259C8EC4009B9015 /* RootView.swift in Sources */,
-				9D5059A3259C8EAF009B9015 /* WeatherScreen.swift in Sources */,
 				9D505970259C78A0009B9015 /* Optional.swift in Sources */,
 				9D505A2025A0AEC0009B9015 /* AirlineListViewModel.swift in Sources */,
 				9D50597E259C8569009B9015 /* TabList.swift in Sources */,
@@ -806,7 +770,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9D13D76F25C49F7300DFCE5D /* XCRemoteSwiftPackageReference "UIComponents" */ = {
+		9D12ED6A260145F600DBDC20 /* XCRemoteSwiftPackageReference "UIComponents" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/InnaBlack/UIComponents.git";
 			requirement = {
@@ -814,26 +778,35 @@
 				kind = branch;
 			};
 		};
-		9D13D77525C49F8000DFCE5D /* XCRemoteSwiftPackageReference "Core" */ = {
+		9D12ED702601471C00DBDC20 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/InnaBlack/Core.git";
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
 			requirement = {
-				branch = main;
+				branch = master;
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9D13D77025C49F7300DFCE5D /* UIComponents */ = {
+		9D12ED502601157700DBDC20 /* CoreRealm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9D13D76F25C49F7300DFCE5D /* XCRemoteSwiftPackageReference "UIComponents" */;
+			productName = CoreRealm;
+		};
+		9D12ED6B260145F600DBDC20 /* UIComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D12ED6A260145F600DBDC20 /* XCRemoteSwiftPackageReference "UIComponents" */;
 			productName = UIComponents;
 		};
-		9D13D77625C49F8000DFCE5D /* Core */ = {
+		9D12ED712601471D00DBDC20 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9D13D77525C49F8000DFCE5D /* XCRemoteSwiftPackageReference "Core" */;
-			productName = Core;
+			package = 9D12ED702601471C00DBDC20 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		9D12ED732601471D00DBDC20 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9D12ED702601471C00DBDC20 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

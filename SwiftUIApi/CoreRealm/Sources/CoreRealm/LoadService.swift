@@ -6,12 +6,13 @@
 //
 
 import RealmSwift
+import Foundation
 
 
-typealias simpleHandler = (_ error: Error?) -> Void
+public typealias simpleHandler = (_ error: Error?) -> Void
 
 
-protocol LoadServiceInput {
+public protocol LoadServiceInput {
     func sync(_ completion: simpleHandler?)
     func syncIfNeed(_ completion: simpleHandler?)
 }
@@ -38,12 +39,12 @@ class LoadService {
         }
     }
     
-    init(networkService: AirlinesNetworkServices,
+    init(airlineNetworkService: AirlinesNetworkServices,
          databaseService: DataBaseService,
-         contactsService: AirlinesServiceInput) {
-        self.networkService = networkService
+         airlinesService: AirlinesServiceInput) {
+        self.airlineNetworkService = airlineNetworkService
         self.databaseService = databaseService
-        self.contactsService = contactsService
+        self.airlineService = airlinesService
     }
 }
 
@@ -57,7 +58,7 @@ extension LoadService: LoadServiceInput {
         }
         else if let syncCompletion = completion
         {
-            let error = NSError(code: 200, message: "Already updated")
+            let error = NSError.init(domain: "Already updated", code: 200)
             
             syncCompletion(error)
         }
@@ -74,27 +75,26 @@ extension LoadService: LoadServiceInput {
         
         let requestOperation = BlockOperation
         {
-            let resourceNames = self.resourceNames
             
             let requestsGroup = DispatchGroup()
             
             LogService.log(.loadService, level: .time, message: "Start loading resources \(date.timeIntervalSinceNow) s")
             date = Date()
             
-            for i in 1...3
+            for _ in 1...3
             {
                 requestsGroup.enter()
                                 
-                self.airlineNetworkService.getAirlines(page: page) { [weak self] (airlines, errorMessage)
+                self.airlineNetworkService.getAirlines(page: 1) { [weak self] (airlines, errorMessage)
                     in
-                    if let someData = resultData, someData.count > 0
+                    if let someData = airlines
                     {
-                        self?..writeContacts(from: someData)
+                        self?.airlineService.writeContacts(from: someData)
                     }
                     
-                    if let syncError = error
+                    if let syncError = errorMessage
                     {
-                        syncErrors.append(syncError)
+                        syncErrors.append(syncError as! Error)
                     }
                     requestsGroup.leave()
                 }
@@ -119,8 +119,7 @@ extension LoadService: LoadServiceInput {
                     }
                     else
                     {
-                        let error = NSError(code: 502, message: "Connection error")
-                        
+                        let error = NSError.init(domain: "Connection error", code: 502)
                         syncErrors.append(error)
                     }
                     

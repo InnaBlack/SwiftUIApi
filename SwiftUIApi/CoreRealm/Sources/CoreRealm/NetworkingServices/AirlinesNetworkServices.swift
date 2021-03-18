@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import RealmSwift
 
-public class AirlinesNetworkServices {
+class AirlinesNetworkServices {
     
     // MARK: - Vars & Lets
     
@@ -20,7 +21,7 @@ public class AirlinesNetworkServices {
     public func getAirlines(page: Int, handler: @escaping (_ airlines: AirlineList?, _ message: AlertMessage?)->()) {
         self.apiManager.call(type: RequestFlightsItemsType.airlines
         ) { (airlines: AirlineList?, message: AlertMessage?) in
-            if let airlines = airlines {
+            if let airlines = airlines{
                 self.airlines = airlines
                 handler(airlines, nil)
             } else {

@@ -7,19 +7,19 @@
 
 import Foundation
 import UIKit
+import Alamofire
 
-
-class LocatorService {
-    static let current = LocatorService()
+ public class LocatorService {
+    public static let current = LocatorService()
     
     var airlinesNetworkService: AirlinesNetworkServices!
     var dataBaseService: DataBaseService!
     
-    lazy var loadService = makeLoadService()
-    lazy var airlinesService = makeAirlinesService()
+    public lazy var loadService = makeLoadService()
+    public lazy var airlinesService = makeAirlinesService()
     
 
-    init() {
+    public init() {
         initEarlyServices()
     }
     
@@ -43,8 +43,8 @@ private extension LocatorService {
         LogService.log(.databaseService, level: .info, message: "did create")
     }
     
-    func makeAirlinesService() -> ContactsServiceInput {
-        let service = ContactsService(databaseService: self.dataBaseService)
+    func makeAirlinesService() -> AirlinesServiceInput {
+        let service = AirlinesService(databaseService: self.dataBaseService)
         
         LogService.log(.contactsService, level: .info, message: "did create")
         
@@ -53,9 +53,9 @@ private extension LocatorService {
     
     func makeLoadService() -> LoadServiceInput {
         
-        let service = LoadService(networkService: self.networkService,
+        let service = LoadService(airlineNetworkService: self.airlinesNetworkService,
                                   databaseService: self.dataBaseService,
-                                  contactsService: self.contactsService)
+                                  airlinesService: self.airlinesService)
         LogService.log(.loadService, level: .info, message: "did create")
         
         return service

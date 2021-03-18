@@ -12,11 +12,10 @@ import RealmSwift
 
 public class AirlineList: RealmSwift.Object, Codable {
 
-    var id = UUID().uuidString
-    var airlines = List<Airline>()
+    @objc dynamic var id = UUID().uuidString
+    dynamic var airlines = List<Airline>()
     
     enum CodingKeys: String, CodingKey {
-        case id = "id"
         case airlines
     }
     

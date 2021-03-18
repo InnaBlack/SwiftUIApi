@@ -6,22 +6,13 @@
 //
 
 import SwiftUI
-import Core
-import Alamofire
+import CoreRealm
+
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
                    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     print("SwiftUIAppNavAppApp application is starting up. ApplicationDelegate didFinishLaunchingWithOptions.")
-    
-    let apiManager = APIManager(sessionManager: Alamofire.Session(configuration: URLSessionConfiguration.default))
-        
-   
-    ServiceLocator.shared.addService(service: AirportsNetworkServices(apiManager: apiManager) as AirportsNetworkServices)
-    ServiceLocator.shared.addService(service: FlightsNetworkServices(apiManager: apiManager) as FlightsNetworkServices)
-    ServiceLocator.shared.addService(service: AirlinesNetworkServices(apiManager: apiManager) as AirlinesNetworkServices)
-    ServiceLocator.shared.addService(service: WeatherNetworkServices(apiManager: apiManager) as WeatherNetworkServices)
-    
 
 
     return true
@@ -43,8 +34,6 @@ struct SwiftUICombineAppApp: App {
   var body: some Scene {
     WindowGroup {
         RootView()
-            .environmentObject(FlightListViewModel())
-            .environmentObject(AirpotListViewModel())
             .environmentObject(AirlineListViewModel())
     }
     .onChange(of: scenePhase) { newScenePhase in
