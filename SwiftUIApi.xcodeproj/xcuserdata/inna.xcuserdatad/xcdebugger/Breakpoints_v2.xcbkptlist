@@ -1447,7 +1447,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B5B02119-AD9E-4781-A515-FC7C3432E4B8"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftUIApi/Screens/ListScreen/ListScreen.swift"
@@ -1527,7 +1527,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "5B10BF38-D1E2-46EA-9B8E-8E83F8B32141"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftUIApi/Basis/ItemAdapter/AdapterItem.swift"

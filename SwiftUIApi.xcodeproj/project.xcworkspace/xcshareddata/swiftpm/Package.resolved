@@ -11,12 +11,21 @@
         }
       },
       {
+        "package": "CoreRealm",
+        "repositoryURL": "https://github.com/InnaBlack/CoreRealm.git",
+        "state": {
+          "branch": "master",
+          "revision": "ff070efc56447e354efbf0ba2f3e05fde850957b",
+          "version": null
+        }
+      },
+      {
         "package": "Realm",
         "repositoryURL": "https://github.com/realm/realm-cocoa.git",
         "state": {
-          "branch": "master",
-          "revision": "d6ebfbfea30a4a9c2f6df6177de2374e561046bc",
-          "version": null
+          "branch": null,
+          "revision": "ae8e646590396dfc13c1abbf8aa2e48c43766dce",
+          "version": "10.7.2"
         }
       },
       {
